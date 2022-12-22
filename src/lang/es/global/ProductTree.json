@@ -1,0 +1,10 @@
+{
+    "noProducts": "No hay productos añadidos",
+    "addProduct": "Añadir Producto",
+    "materialCode": "Código Material",
+    "materialName": "Nombre Material",
+    "testCode": "Código Ensayo",
+    "testName": "Nombre Ensayo",
+    "minValue": "Valor Mínimo",
+    "maxValue": "Valor Máximo"
+}

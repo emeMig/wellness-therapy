@@ -1,0 +1,20 @@
+[
+    {
+        "idProf": "0001",
+        "from":"nombreProfesional1",
+        "time": 16613402277037,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis sem dignissim, sollicitudin eros eget, feugiat massa. In quis imperdiet nibh. Ut pellentesque posuere erat id porta. Mauris bibendum erat et odio lacinia, nec suscipit nibh elementum. In a sapien non tortor viverra gravida ac eu risus. Mauris sagittis lacus et commodo luctus. Aenean lectus massa, egestas vitae nibh ac, molestie scelerisque massa. "
+    },
+    {
+        "idProf": "0002",
+        "from":"nombreProfesional2",
+        "time": 16613402277037,
+        "content": "Quisque et nulla at neque ornare viverra ac eget nunc. Proin odio leo, ultrices sit amet eros quis, suscipit aliquam ex. Aliquam mi quam, malesuada iaculis nulla non, consectetur molestie ligula. Vestibulum ac finibus enim, a auctor neque. Maecenas eu consectetur enim."
+    },
+    {
+        "idProf": "0003",
+        "from":"nombreProfesional3",
+        "time": 16613402277037,
+        "content": "Aenean consequat sodales malesuada. Suspendisse erat felis, commodo eget ipsum vitae, hendrerit cursus mauris. Ut aliquet lorem mauris, sed laoreet est vestibulum ut. In cursus placerat nulla, a tincidunt ante luctus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]

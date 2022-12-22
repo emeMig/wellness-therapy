@@ -1,0 +1,13 @@
+// You can override more styles with vuetify scss variables
+// Visit: https://vuetifyjs.com/en/customization/sass-variables
+// Or our online document
+
+$body-font-family: 'Source Sans Pro', sans-serif;
+$font-size-root: 17px;
+$border-radius-root: 4px;
+
+$headings: ('h6': ('font-family': 'Source Sans Pro', sans-serif 'letter-spacing': 0, 'weight': 600), 'subtitle-2': ('weight': 600));
+$sidebar: ("list-item":("title": ("size": 0.90rem, "line-height": 1.1rem)));
+$bottom-navigation: ('btn': ('font-size': 0.85rem));
+$v-select: ('selection-comma': ('line-height': 1.2rem));
+$textarea-line-height: 1.4rem;

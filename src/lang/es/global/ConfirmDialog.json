@@ -1,0 +1,23 @@
+{
+    "buttonTextOk": "SI",
+    "buttonTextNo": "NO",
+    "buttonTextClose": "Cerrar",
+    "buttonTextCancel": "Cancelar",
+    "defaultTitle": "Confirmación requerida",
+    "defaultMessage": "¿Está seguro de realizar esta acción?",
+    "actionOk": "Acción realizada",
+    "logoutTitle": "Cierre de sesión",
+    "logoutMessage": "¿Desea salir de la sesión actual?",
+    "changeEmailTitle": "Cambio de datos de usuario",
+    "changeEmailMessage": "Se va a cambiar el email del usuario",
+    "printLabelTitle": "Imprimir etiqueta",
+    "printLabelMessage": "¿Está seguro de que desea imprimir la etiqueta?",
+    "printLabelSuccess": "Etiqueta enviada a impresión",
+    "printReportTitle": "Imprimir Informe",
+    "printReportMessage": "¿Está seguro de que desea imprimir el informe?",
+    "printReportSuccess": "Informe enviado a impresión",
+    "submitPdfSignature": "¡La nueva firma ha sido actualizada correctamente!",
+    "warningFillForm": "¡Cuidado, debe rellenar todos los campos antes!",
+    "errorType": "¡Solo se admiten los documentos de tipo pdf!"
+
+}

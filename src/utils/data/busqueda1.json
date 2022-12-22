@@ -1,0 +1,29 @@
+[
+    {
+        "id": "id1",
+        "profesionalSurName": "nombre1",
+        "profesionalLastName": "apellido1",
+        "speciality": "psicoterapia",
+        "city": "Madrid",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "valoration": "4.5"
+    },
+    {
+        "id": "id2",
+        "profesionalSurName": "nombre2",
+        "profesionalLastName": "apellido2",
+        "speciality": "mindfulness",
+        "city": "Madrid",
+        "description": "loren ipsum",
+        "valoration": "5"
+    },
+    {
+        "id": "id3",
+        "profesionalSurName": "nombre3",
+        "profesionalLastName": "apellido3",
+        "speciality": "coaching",
+        "city": "Barcelona",
+        "description": "loren ipsum",
+        "valoration": "3"
+    }
+]

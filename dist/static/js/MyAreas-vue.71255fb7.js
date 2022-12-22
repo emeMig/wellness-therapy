@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["MyAreas-vue"],{"5f82":function(e,n,t){"use strict";t.r(n);var u=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("h1",[e._v("MY AREAS")])},l=[],r={},s=r,a=t("2877"),c=Object(a["a"])(s,u,l,!1,null,null,null);n["default"]=c.exports}}]);
+//# sourceMappingURL=MyAreas-vue.71255fb7.js.map

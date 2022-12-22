@@ -1,0 +1,24 @@
+{
+  "titulo": "Gestión de Materiales",
+  "material": "Material",
+  "materialesSeleccionados": "Materiales seleccionados",
+  "tituloDialogo": "Materiales",
+  "codigo": "Código",
+  "nombre" : "Nombre",
+  "descripcion": "Descripción",
+
+
+  "guardarMaterial":"Guardar Material",
+  "confirmacionGuardarMaterial": "¿Está seguro de que desea guardar el material?",
+  "guardado": "Material guardado correctamente",
+  "guardadoError": "Error al guardar el material",
+  "actualizarMaterial":"Actualizar material",
+  "confirmacionActualizarMaterial": "¿Está seguro de que desea actualizar el material?",
+  "actualizado": "Material actualizado correctamente",
+  "actualizadoError": "Error al actualizar el material",
+  "eliminarMaterial":"Eliminar material",
+  "confirmacionEliminarMaterial": "¿Está seguro de que desea eliminar el material?",
+  "borrado": "Material borrado correctamente",
+  "borradoError": "Error al borrar el material",
+  "errorById": "Error al cargar el registro"
+}

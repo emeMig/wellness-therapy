@@ -1,0 +1,24 @@
+{
+  "titulo": "Gestión de Fabricantes",
+  "tituloDialogo": "Fabricantes",
+  "fabricante": "Fabricante",
+  "nombre": "Nombre",
+  "nombreCompleto": "Nombre",
+  "telefono": "Telefono",
+  "email": "Email",
+
+
+  "guardarFabricante":"Guardar Fabricante",
+  "confirmacionGuardarFabricante": "¿Está seguro de que desea guardar el fabricante?",
+  "guardado": "Fabricante guardado correctamente",
+  "guardadoError": "Error al guardar el fabricante",
+  "actualizarFabricante":"Actualizar Fabricante",
+  "confirmacionActualizarFabricante": "¿Está seguro de que desea actualizar el fabricante?",
+  "actualizado": "Fabricante actualizado correctamente",
+  "actualizadoError": "Error al actualizar el fabricante",
+  "eliminarFabricante":"Eliminar Fabricante",
+  "confirmacionEliminarFabricante": "¿Está seguro de que desea eliminar el fabricante?",
+  "borrado": "Fabricante borrado correctamente",
+  "borradoError": "Error al borrar el fabricante",
+  "errorById": "Error al cargar el registro"
+}

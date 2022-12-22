@@ -1,0 +1,33 @@
+{
+  "datosPrin": "Datos Principales",
+  "ordenesTr": "Ordenes de Trabajo",
+  "titulo": "Gestión de Actas",
+  "acta": "Acta",
+  "actas": "Actas",
+  "codigo": "Código",
+  "estado": "Estado",
+  "fechaRecepcion": "Fecha de alta",
+  "fechaSolicitud": "Fecha de solicitud",
+  "fechaFin": "Fecha de fin",
+  "usuario": "Usuario de Alta",
+  "referencia": "Referencia",
+  "lote": "Lote",
+  "cantidadLote": "Cantidad de lote",
+  "cantidadMuestras": "Cantidad de muestras",
+  "tipo": "Serie/Tipo",
+  "archivosAdjuntos": "Archivos adjuntos",
+  "descripcion": "Descripción",
+  "notas": "Notas",
+  "observaciones": "Observaciones",
+  "nombreArchivo": "Nombre",
+  "size": "Tamaño",
+  "estadoDesuso": "Desuso",
+  "estadoUso": "Uso",
+
+
+  "cerrarActa": "Cerrar Acta",
+  "mensajeConfirmacionCerrar": "¿Está seguro de que desea cerrar el acta?",
+  "reabrirActa": "Reabrir Acta",
+  "mensajeConfirmacionReabrir": "¿Está seguro de que desea reabrir el registro?"
+}
+

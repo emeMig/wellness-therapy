@@ -1,0 +1,6 @@
+{
+    "requiredField": "Campo requerido",
+    "invalidFormat": "Formato de campo inválido",
+    "emailError": "Email no coincide",
+    "characterLimit": "Límite de caracteres excedido"
+}

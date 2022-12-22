@@ -1,0 +1,21 @@
+.crud-table table {   
+    th, td{
+        font-size: 0.90em !important;
+    }
+}
+
+//expansion-button
+.expanded-crud-table td:last-of-type {
+    padding: 0 !important;
+    overflow: hidden    
+}
+.expanded-crud-table .v-data-table__expanded__content>td{
+    padding: 16px !important;
+    overflow: hidden
+}
+
+//expansion-icon
+.v-data-table__expand-icon {
+    border: 1.5px solid #747474;
+    border-radius: 20px;
+}

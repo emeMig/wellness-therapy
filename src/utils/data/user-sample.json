@@ -1,0 +1,26 @@
+[
+    {
+        "userId": "0001",
+        "login": "profesional",
+        "password": "future",
+        "nombre": "Carlos",
+        "apellidos": "Martínez Cuesta",
+        "profileType": 2, 
+        "telefono": "+34666123456",
+        "direccion": "",
+        "especialidad": "coaching",
+        "email": "carlos@mail.es"  
+    },
+    {
+        "userId": "0002",
+        "login": "user",
+        "password": "future",
+        "nombre": "Juan",
+        "apellidos": "García López",
+        "profileType": 1, 
+        "telefono": "",
+        "direccion": "",
+        "especialidad": "",
+        "email": "juangarcia@sample.es"    
+    }
+]

@@ -1,0 +1,5 @@
+.fs-relief-ele {
+    .v-tab--active {
+        @extend .relief-inset;
+    }
+}

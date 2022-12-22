@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "organismo": "Organismo 1",
+    "direccion": "Calle cliente 1",
+    "observaciones": "Observaciones 1",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  },
+  {
+    "id": 2,
+    "organismo": "Organismo 2",
+    "direccion": "Calle cliente 2",
+    "observaciones": "Observaciones 2",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  },
+  {
+    "id": 3,
+    "organismo": "Organismo 3",
+    "direccion": "Calle cliente 3",
+    "observaciones": "Observaciones 3",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  },
+  {
+    "id": 4,
+    "organismo": "Organismo 4",
+    "direccion": "Calle cliente 4",
+    "observaciones": "Observaciones 4",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  },
+  {
+    "id": 5,
+    "organismo": "Organismo 5",
+    "direccion": "Calle cliente 5",
+    "observaciones": "Observaciones 5",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  },
+  {
+    "id": 6,
+    "organismo": "Organismo 6",
+    "direccion": "Calle cliente 6",
+    "observaciones": "Observaciones 6",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  },
+  {
+    "id": 7,
+    "organismo": "Organismo 7",
+    "direccion": "Calle cliente 7",
+    "observaciones": "Observaciones 7",
+    "personaContacto1": "Persona de contacto 1",
+    "telefono1": "67895435",
+    "email1": "contacto1@sample.es",
+    "personaContacto2": "Persona de contacto 2",
+    "telefono2": "67895435",
+    "email2": "contacto2@sample.es"
+  }
+]

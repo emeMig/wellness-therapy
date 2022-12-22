@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Español",
+    "locale": "es",
+    "country": "es",
+    "fallback": true
+  },
+  {
+    "name": "English",
+    "locale": "en",
+    "country": "us"    
+  }
+]

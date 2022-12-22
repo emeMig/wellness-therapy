@@ -1,0 +1,30 @@
+{
+  "titulo": "Gestión de clientes",
+  "tituloDialogo": "Clientes",
+  "key": "nombreCliente",
+  "cliente": "Cliente",
+  "organismo": "Organismo",
+  "telefono1": "Teléfono 1",
+  "telefono2": "Teléfono 2",
+  "personaContacto1": "Persona de Contacto 1",
+  "personaContacto2": "Persona de Contacto 2",
+  "email1": "Email 1",
+  "email2": "Email 2",
+  "observaciones": "Observaciones",
+  "direccion": "Dirección",
+
+
+  "guardarCliente": "Guardar Cliente",
+  "confirmacionGuardarCliente": "¿Está seguro de que desea guardar el cliente?",
+  "guardado": "Cliente guardado correctamente",
+  "guardadoError": "Error al guardar el cliente",
+  "actualizarCliente": "Actualizar Cliente",
+  "confirmacionActualizarCliente": "¿Está seguro de que desea actualizar el cliente?",
+  "actualizado": "Cliente actualizado correctamente",
+  "actualizadoError": "Error al actualizar el cliente",
+  "eliminarCliente": "Eliminar Cliente",
+  "confirmacionEliminarCliente": "¿Está seguro de que desea eliminar el cliente?",
+  "borrado": "Cliente borrado correctamente",
+  "borradoError": "Error al borrar el cliente",
+  "errorById": "Error al cargar el registro"
+}

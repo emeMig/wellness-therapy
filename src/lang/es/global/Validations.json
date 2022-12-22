@@ -1,0 +1,17 @@
+{
+    "alphanumeric": "Este campo solo puede contener letras y dígitos",
+    "alphanumericPlus": "Este campo solo puede contener letras, dígitos, guiones, guiones bajos y espacios",
+    "email": "Este campo debe contener un email válido",
+    "extension": "Este campo debe contener una extensión correcta, comenzando por .",
+    "fileSize": "El tamaño máximo permitido es 1MB",
+    "numeric": "Este campo sólo puede contener números",
+    "numericNoNegativeValues": "El valor no puede ser negativo.",
+    "numericMaxValue": "El valor no puede ser mayor de ",
+    "maxLengthDefault": "Máximo de caracteres permitidos: ",
+    "onlyLetters": "Este campo solo puede contener letras",
+    "required": "Este campo es obligatorio",
+    "requiredAutocomplete": "Este campo debe de ser seleccionado",
+    "requiredUser": "Usuario requerido",
+    "requiredPass": "Contraseña requerida",
+    "dateIsAfterTomorrow": "La fecha de creación no puede ser posterior a la fecha actual"
+}

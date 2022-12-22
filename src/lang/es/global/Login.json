@@ -1,0 +1,9 @@
+{
+    "forgotPass": "¿Has olvidado tu clave?",
+    "successSign": "Logado con éxito",
+    "access":"Acceder",
+    "user": "Usuario",
+    "pass": "Contraseña",
+    "requiredUser": "Usuario requerido",
+    "requiredPass": "Contraseña requerida"
+}

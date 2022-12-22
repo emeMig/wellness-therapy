@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "nombre": "Usuario 1",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario1@sample.es",
+    "rol": "Jefe de Laboratorio",
+    "bloqueado": true,
+    "permisos": "Validador Laboratorio"
+  },
+  {
+    "id": 2,
+    "nombre": "Usuario 2",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario2@sample.es",
+    "rol": "Jefe de Laboratorio",
+    "bloqueado": false,
+    "permisos": "Validador Laboratorio"
+  },
+  {
+    "id": 3,
+    "nombre": "Usuario 3",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario3@sample.es",
+    "rol": "Jefe de Laboratorio",
+    "bloqueado": false,
+    "permisos": "Validador Laboratorio"
+  },
+  {
+    "id": 4,
+    "nombre": "Usuario 4",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario4@sample.es",
+    "rol": "Jefe de Planta",
+    "bloqueado": false,
+    "permisos": "Validador Planta"
+  },
+  {
+    "id": 5,
+    "nombre": "Usuario 5",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario5@sample.es",
+    "rol": "Jefe de Planta",
+    "bloqueado": false,
+    "permisos": "Validador Planta"
+  },
+  {
+    "id": 6,
+    "nombre": "Usuario 6",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario6@sample.es",
+    "rol": "Técnico de laboratorio",
+    "bloqueado": false,
+    "permisos": "Técnico"
+  },
+  {
+    "id": 7,
+    "nombre": "Usuario 7",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario7@sample.es",
+    "rol": "Técnico de laboratorio",
+    "bloqueado": false,
+    "permisos": "Técnico"
+  },
+  {
+    "id": 8,
+    "nombre": "Usuario 8",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario8@sample.es",
+    "rol": "Técnico de laboratorio",
+    "bloqueado": true,
+    "permisos": "Técnico"
+  },
+  {
+    "id": 9,
+    "nombre": "Usuario 9",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario9@sample.es",
+    "rol": "Secretario",
+    "bloqueado": false,
+    "permisos": "Secretaría"
+  },
+  {
+    "id": 10,
+    "nombre": "Usuario 10",
+    "apellido1": "Appelido 1",
+    "apellido2": "Apellido2",
+    "fechaAlta": "20/09/2022",
+    "email": "usuario10@sample.es",
+    "rol": "Secretario",
+    "bloqueado": false,
+    "permisos": "Secretaría"
+  }
+
+]

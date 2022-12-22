@@ -1,0 +1,16 @@
+{
+    "userProfile": "Perfil de Usuario",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "phone": "Teléfono",
+    "role": "Rol",
+    "email": "Email",
+    "changeEmail": "Cambiar Email",
+    "enterEmail": "Introduzca nuevo email",
+    "reenterEmail": "Vuelva a introducir nuevo email",
+    "changePassword": "Cambiar contraseña",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "cancelar",
+    "changeMailOk": "Email cambiado correctamente "
+}

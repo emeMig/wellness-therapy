@@ -1,0 +1,16 @@
+{
+  "titleDialog": "Orden de trabajo",
+  "estado": "Estado",
+  "fecha": "Fecha de inserción",
+  "tipo": "Serie/Tipo",
+  "situacion": "Situación",
+  "descripcion": "Descripción",
+  "personalGestor": "Gestor personal",
+
+  "guardarOrden": "Guardar Orden de trabajo",
+  "confirmacionGuardarOrden": "¿Está seguro de que desea guardar la orden de trabajo?",
+  "actualizarOrden": "Actualizar Orden de trabajo",
+  "confirmacionActualizarOrden": "¿Está seguro de que desea actualizar la orden de trabajo?",
+  "eliminarOrden":"Eliminar Orden de trabajo",
+  "confirmacionEliminarOrden": "¿Está seguro de que desea eliminar la orden de trabajo?"
+}

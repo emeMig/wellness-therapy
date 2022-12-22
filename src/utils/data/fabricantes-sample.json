@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombreCompleto": "px-militar"
+  },
+  {
+    "id": 2,
+    "nombreCompleto": "Depol"
+  },
+  {
+    "id": 3,
+    "nombreCompleto": "seven oceans"
+  },
+  {
+    "id": 4,
+    "nombreCompleto": "bp-er"
+  },
+  {
+    "id": 5,
+    "nombreCompleto": "Texil S.A."
+  },
+  {
+    "id": 6,
+    "nombreCompleto": "Pinol"
+  },
+  {
+    "id": 7,
+    "nombreCompleto": "El corte inglés ropa"
+  },
+  {
+    "id": 8,
+    "nombreCompleto": "El corte inglés comida"
+  },
+  {
+    "id": 9,
+    "nombreCompleto": "Meals Ready to Eat"
+  },
+  {
+    "id": 10,
+    "nombreCompleto": "OneStepMeal"
+  }
+]

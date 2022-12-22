@@ -1,0 +1,4112 @@
+[
+  {
+    "codigo": "001",
+    "fechaRecepcion": "10/11/2022",
+    "usuario": "Usuario 1",
+    "referencia": "001",
+    "cliente": {
+      "nombreCompleto": "Juan Ignacio Pérez",
+      "Teléfono": "+3467895435",
+      "email": "juanIgnacio@sample.es"
+    },
+    "fabricante": {
+      "nombreCompleto": "Pinol",
+      "telefono": "+34910556454",
+      "email": "pinolcorporate@sample.es"
+    },
+    "concurso":{
+      "codigo": "001",
+      "nombre": "Concurso 1",
+      "fechaRecepcion": "10/11/2022",
+      "usuario": "Usuario 9",
+      "descripcion": "Concurso 1",
+      "pliegos": [
+        {
+          "codigo": "001",
+          "nombre": "pliego 1",
+          "fecha" : "10/11/2022",
+          "usuario": "Usuario 1",
+          "materiales": [
+            {
+              "codigo": "0001",
+              "nombre": "Nailon",
+              "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0002",
+              "nombre": "Poliéster",
+              "descripcion": "Fibra sintética",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0003",
+              "nombre": "Metal",
+              "descripcion": "Capacidad de conducir el calor y electricidad",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            }
+          ],
+          "actas": [
+            {
+              "codigo": "001",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "002",
+              "concurso": {
+                "codigo": "002",
+                "nombre": "Concurso 2",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 2"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "002",
+                "nombre": "pliego 2",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 2",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 1000
+            },
+            {
+              "codigo": "003",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "004",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "005",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            }
+          ]
+        }
+      ]
+    },
+    "pliego": {
+      "codigo": "001",
+      "nombre": "Pliego 1",
+      "fecha" : "10/11/2022",
+      "usuario": "Usuario 10",
+      "materiales": [
+        {
+          "codigo": "0001",
+          "nombre": "Nailon",
+          "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0002",
+          "nombre": "Poliéster",
+          "descripcion": "Fibra sintética",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0003",
+          "nombre": "Metal",
+          "descripcion": "Capacidad de conducir el calor y electricidad",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        }
+      ]
+    },
+    "lote": "1",
+    "cantidad" : 12222,
+    "tipo": "Vestimenta",
+    "estado": "Uso",
+    "materiales": [
+      {
+        "codigo": "0001",
+        "nombre": "Nailon",
+        "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+      },
+      {
+        "codigo": "0002",
+        "nombre": "Poliéster",
+        "descripcion": "Fibra sintética"
+      }
+    ],
+    "ordenes": [
+      {
+        "id": 1,
+        "estado": "completo",
+        "serie": "001",
+        "fecha": "14/10/2022 11:42",
+        "situacion": "Situación de la orden de trabajo 1",
+        "descripcion": "Descripción de la orden de trabajo 1",
+        "personal": "Personal de la orden de trabajo 1",
+        "cliente": "Si",
+        "ensayos": [
+          {
+            "id": 4,
+            "estado": "completo",
+            "codigo": "004",
+            "nombre": "Temperatura soportada ",
+            "descripcion": "Ensayo sobre la temperatura soportada por los materiales",
+            "grupoMuestra": "001",
+            "norma": "Normal con puntas",
+            "acreditado": "No",
+            "tipo": "Cualitativo",
+            "unidades": "ºC",
+            "listaCondiciones": "La temperatura soportada debe ser siempre entre 90 y 150 ºC independientemente de el desgaste",
+            "valorMinimo": "90",
+            "valorMaximo": "150",
+            "producto": "Producto 4"
+          },
+          {
+            "id": 5,
+            "estado": "incompleto",
+            "codigo": "005",
+            "nombre": "Ensayo 5",
+            "descripcion": "Ensayo 5",
+            "grupoMuestra": "001",
+            "norma": "5",
+            "acreditado": "Si",
+            "tipo": "Cualitativo",
+            "unidades": "ºC",
+            "listaCondiciones": "Listado 5",
+            "valorMinimo": "90",
+            "valorMaximo": "150",
+            "producto": "Producto 4"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "estado": "incompleto",
+        "serie": "002",
+        "fecha": "14/11/2022 15:12",
+        "situacion": "Situación de la orden de trabajo 2",
+        "descripcion": "Descripción de la orden de trabajo 2",
+        "personal": "Personal de la orden de trabajo 2",
+        "cliente": "Si"
+      }
+    ]
+  },
+  {
+    "codigo": "002",
+    "fechaRecepcion": "10/11/2022",
+    "usuario": "Usuario 2",
+    "referencia": "002",
+    "cliente": {
+      "nombreCompleto": "Juan Ignacio Pérez",
+      "Teléfono": "+3467895435",
+      "email": "juanIgnacio@sample.es"
+    },
+    "fabricante": {
+      "nombreCompleto": "Pinol",
+      "telefono": "+34910556454",
+      "email": "pinolcorporate@sample.es"
+    },
+    "concurso": {
+      "codigo": "001",
+      "nombre": "Concurso 1",
+      "fechaRecepcion": "10/11/2022",
+      "usuario": "Usuario 9",
+      "descripcion": "Concurso 1",
+      "pliegos": [
+        {
+          "codigo": "001",
+          "nombre": "pliego 1",
+          "fecha" : "10/11/2022",
+          "usuario": "Usuario 1",
+          "materiales": [
+            {
+              "codigo": "0001",
+              "nombre": "Nailon",
+              "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0002",
+              "nombre": "Poliéster",
+              "descripcion": "Fibra sintética",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0003",
+              "nombre": "Metal",
+              "descripcion": "Capacidad de conducir el calor y electricidad",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            }
+          ],
+          "actas": [
+            {
+              "codigo": "001",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "002",
+              "concurso": {
+                "codigo": "002",
+                "nombre": "Concurso 2",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 2"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "002",
+                "nombre": "pliego 2",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 2",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 1000
+            },
+            {
+              "codigo": "003",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "004",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "005",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            }
+          ]
+        }
+      ]
+    },
+    "pliego": {
+      "codigo": "001",
+      "nombre": "Pliego 1",
+      "fecha" : "10/11/2022",
+      "usuario": "Usuario 10",
+      "materiales": [
+        {
+          "codigo": "0001",
+          "nombre": "Nailon",
+          "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0002",
+          "nombre": "Poliéster",
+          "descripcion": "Fibra sintética",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0003",
+          "nombre": "Metal",
+          "descripcion": "Capacidad de conducir el calor y electricidad",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        }
+      ]
+    },
+    "estado": "Uso",
+    "lote": "2",
+    "cantidad" : 1000,
+    "tipo": "Vestimenta",
+    "materiales": [
+      {
+        "codigo": "0001",
+        "nombre": "Nailon",
+        "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+      }
+    ],
+    "ordenes": []
+  },
+  {
+    "codigo": "003",
+    "fechaRecepcion": "10/11/2022",
+    "usuario": "Usuario 2",
+    "referencia": "001",
+    "cliente": {
+      "nombreCompleto": "Juan Ignacio Pérez",
+      "Teléfono": "+3467895435",
+      "email": "juanIgnacio@sample.es"
+    },
+    "fabricante": {
+      "nombreCompleto": "Pinol",
+      "telefono": "+34910556454",
+      "email": "pinolcorporate@sample.es"
+    },
+    "concurso": {
+      "codigo": "001",
+      "nombre": "Concurso 1",
+      "fechaRecepcion": "10/11/2022",
+      "usuario": "Usuario 9",
+      "descripcion": "Concurso 1",
+      "pliegos": [
+        {
+          "codigo": "001",
+          "nombre": "pliego 1",
+          "fecha" : "10/11/2022",
+          "usuario": "Usuario 1",
+          "materiales": [
+            {
+              "codigo": "0001",
+              "nombre": "Nailon",
+              "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0002",
+              "nombre": "Poliéster",
+              "descripcion": "Fibra sintética",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0003",
+              "nombre": "Metal",
+              "descripcion": "Capacidad de conducir el calor y electricidad",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            }
+          ],
+          "actas": [
+            {
+              "codigo": "001",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "002",
+              "concurso": {
+                "codigo": "002",
+                "nombre": "Concurso 2",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 2"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "002",
+                "nombre": "pliego 2",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 2",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 1000
+            },
+            {
+              "codigo": "003",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "004",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "005",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            }
+          ]
+        }
+      ]
+    },
+    "pliego": {
+      "codigo": "002",
+      "nombre": "Pliego 2",
+      "fecha" : "10/11/2022",
+      "usuario": "Usuario 10",
+      "materiales": [
+        {
+          "codigo": "0001",
+          "nombre": "Nailon",
+          "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0002",
+          "nombre": "Poliéster",
+          "descripcion": "Fibra sintética",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0003",
+          "nombre": "Metal",
+          "descripcion": "Capacidad de conducir el calor y electricidad",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        }
+      ]
+    },
+    "estado": "Desuso",
+    "lote": "1",
+    "cantidad" : 12222,
+    "tipo": "Bromatología",
+    "materiales": [
+      {
+        "codigo": "0001",
+        "nombre": "Nailon",
+        "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+      },
+      {
+        "codigo": "0002",
+        "nombre": "Poliéster",
+        "descripcion": "Fibra sintética"
+      }
+    ],
+    "ordenes": []
+  },
+  {
+    "codigo": "004",
+    "fechaRecepcion": "10/11/2022",
+    "usuario": "Usuario 2",
+    "referencia": "001",
+    "cliente": {
+      "nombreCompleto": "Juan Ignacio Pérez",
+      "Teléfono": "+3467895435",
+      "email": "juanIgnacio@sample.es"
+    },
+    "fabricante": {
+      "nombreCompleto": "Pinol",
+      "telefono": "+34910556454",
+      "email": "pinolcorporate@sample.es"
+    },
+    "concurso": {
+      "codigo": "002",
+      "nombre": "Concurso 2",
+      "fechaRecepcion": "10/11/2022",
+      "usuario": "Usuario 1",
+      "descripcion": "Concurso 2",
+      "pliegos": [
+        {
+          "codigo": "002",
+          "nombre": "pliego 2",
+          "fecha" : "10/11/2022",
+          "usuario": "Usuario 1",
+          "materiales": [
+            {
+              "codigo": "0001",
+              "nombre": "Nailon",
+              "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0002",
+              "nombre": "Poliéster",
+              "descripcion": "Fibra sintética",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            },
+            {
+              "codigo": "0003",
+              "nombre": "Metal",
+              "descripcion": "Capacidad de conducir el calor y electricidad",
+              "ensayos": [
+                {
+                  "codigo": "013",
+                  "nombre": "Ensayo 13",
+                  "descripción": "Ensayo 13",
+                  "grupo de muestra": "001",
+                  "norma": "13",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 13",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 13"
+                },
+                {
+                  "codigo": "014",
+                  "nombre": "Ensayo 14",
+                  "descripción": "Ensayo 14",
+                  "grupo de muestra": "001",
+                  "norma": "14",
+                  "acreditado": "Si",
+                  "tipo": "Cualitativo",
+                  "unidades": "ºC",
+                  "listadoCondiciones": "Listado 14",
+                  "valorMinimo": "90",
+                  "valorMaximo": "150",
+                  "producto": "Producto 14"
+                }
+              ]
+            }
+          ],
+          "actas": [
+            {
+              "codigo": "001",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "002",
+              "concurso": {
+                "codigo": "002",
+                "nombre": "Concurso 2",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 2"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "002",
+                "nombre": "pliego 2",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 2",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 1000
+            },
+            {
+              "codigo": "003",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "004",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            },
+            {
+              "codigo": "005",
+              "concurso": {
+                "codigo": "001",
+                "nombre": "Concurso 1",
+                "fechaRecepcion": "10/11/2022",
+                "usuario": "Usuario 1",
+                "descripcion": "Concurso 1"
+              },
+              "fechaRecepcion": "10/11/2022",
+              "referencia": "001",
+              "pliego": {
+                "codigo": "001",
+                "nombre": "pliego 1",
+                "fecha" : "10/11/2022",
+                "usuario": "Usuario 1",
+                "materiales": [
+                  {
+                    "codigo": "0001",
+                    "nombre": "Nailon",
+                    "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0002",
+                    "nombre": "Poliéster",
+                    "descripcion": "Fibra sintética",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  },
+                  {
+                    "codigo": "0003",
+                    "nombre": "Metal",
+                    "descripcion": "Capacidad de conducir el calor y electricidad",
+                    "ensayos": [
+                      {
+                        "codigo": "013",
+                        "nombre": "Ensayo 13",
+                        "descripción": "Ensayo 13",
+                        "grupo de muestra": "001",
+                        "norma": "13",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 13",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 13"
+                      },
+                      {
+                        "codigo": "014",
+                        "nombre": "Ensayo 14",
+                        "descripción": "Ensayo 14",
+                        "grupo de muestra": "001",
+                        "norma": "14",
+                        "acreditado": "Si",
+                        "tipo": "Cualitativo",
+                        "unidades": "ºC",
+                        "listadoCondiciones": "Listado 14",
+                        "valorMinimo": "90",
+                        "valorMaximo": "150",
+                        "producto": "Producto 14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "materiales": [
+                {
+                  "codigo": "0001",
+                  "nombre": "Nailon",
+                  "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+                },
+                {
+                  "codigo": "0002",
+                  "nombre": "Poliéster",
+                  "descripcion": "Fibra sintética"
+                }
+              ],
+              "cliente": {
+                "nombreCompleto": "Juan Ignacio Pérez",
+                "Teléfono": "+3467895435",
+                "email": "juanIgnacio@sample.es"
+              },
+              "fabricante": {
+                "nombreCompleto": "Pinol",
+                "telefono": "+34910556454",
+                "email": "pinolcorporate@sample.es"
+              },
+              "lote": "1",
+              "cantidad" : 12222
+            }
+          ]
+        }
+      ]
+    },
+    "pliego": {
+      "codigo": "002",
+      "nombre": "Pliego 2",
+      "fecha" : "10/11/2022",
+      "usuario": "Usuario 10",
+      "materiales": [
+        {
+          "codigo": "0001",
+          "nombre": "Nailon",
+          "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0002",
+          "nombre": "Poliéster",
+          "descripcion": "Fibra sintética",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        },
+        {
+          "codigo": "0003",
+          "nombre": "Metal",
+          "descripcion": "Capacidad de conducir el calor y electricidad",
+          "ensayos": [
+            {
+              "codigo": "013",
+              "nombre": "Ensayo 13",
+              "descripción": "Ensayo 13",
+              "grupo de muestra": "001",
+              "norma": "13",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 13",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 13"
+            },
+            {
+              "codigo": "014",
+              "nombre": "Ensayo 14",
+              "descripción": "Ensayo 14",
+              "grupo de muestra": "001",
+              "norma": "14",
+              "acreditado": "Si",
+              "tipo": "Cualitativo",
+              "unidades": "ºC",
+              "listadoCondiciones": "Listado 14",
+              "valorMinimo": "90",
+              "valorMaximo": "150",
+              "producto": "Producto 14"
+            }
+          ]
+        }
+      ]
+    },
+    "estado": "Desuso",
+    "ordenes": [],
+    "lote": "1",
+    "cantidad" : 12222,
+    "tipo": "Bromatología",
+    "materiales": [
+      {
+        "codigo": "0001",
+        "nombre": "Nailon",
+        "descripcion": "Polímero semicristalino con propiedades mecánicas, tenacidad alta y resistencia al desgaste"
+      },
+      {
+        "codigo": "0002",
+        "nombre": "Poliéster",
+        "descripcion": "Fibra sintética"
+      }
+    ]
+  }
+]

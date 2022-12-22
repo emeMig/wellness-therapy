@@ -1,0 +1,59 @@
+.input-width-3x {
+    max-width: 300px;
+}
+
+.v-text-field {
+    .v-text-field__slot input {
+        font-size: 0.90em;
+    }
+    .v-label, .v-input {
+        font-size: 0.90em;
+    }
+    &.relief-input-inset {
+        @extend .pa-0;
+        border-radius: 4px;
+
+        .v-input__control {
+            min-height: 48px;
+            padding: 0;
+
+            .v-input__slot {
+                @extend .relief-inset,
+                .px-3;
+
+                &:after,
+                &:before {
+                    content: none;
+                }
+            }
+
+            input {
+                caret-color: auto;
+            }
+        }
+    }
+
+    &.relief-input {
+        @extend .pa-0;
+        border-radius: 4px;
+
+        .v-input__control {
+            min-height: 48px;
+            padding: 0;
+
+            .v-input__slot {
+                @extend .relief,
+                .px-3;
+
+                &:after,
+                &:before {
+                    content: none;
+                }
+            }
+
+            input {
+                caret-color: auto;
+            }
+        }
+    }
+}

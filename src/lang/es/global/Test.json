@@ -1,0 +1,30 @@
+{
+  "titulo": "Ensayos",
+  "codigo": "Código",
+  "estado": "Estado",
+  "ensayo": "Ensayo",
+  "resultado": "Resultado",
+  "nombre" : "Nombre",
+  "descripcion": "Descripción",
+  "grupoMuestra": "Grupo de Muestra",
+  "norma": "Norma",
+  "acreditado": "Acreditado",
+  "tipo": "Tipo",
+  "unidades": "Unidades",
+  "listaCondiciones": "Lista de condiciones",
+  "valorMinimo": "Valor Mínimo",
+  "valorMaximo": "Valor Máximo",
+  "producto": "Producto",
+
+  "guardarEnsayo":"Guardar Ensayo",
+  "confirmacionGuardarEnsayo": "¿Está seguro de que desea guardar el ensayo?",
+  "actualizarEnsayo":"Actualizar Ensayo",
+  "confirmacionActualizarEnsayo": "¿Está seguro de que desea actualizar el ensayo?",
+  "eliminarEnsayo": "Eliminar Ensayo",
+  "confirmacionEliminarEnsayo":  "¿Está seguro de que desea eliminar el ensayo?",
+  "cerrarEnsayo": "Cerrar Ensayos",
+  "confirmacionCerrarEnsayo":  "¿Está seguro de que desea cerrar la seleccion de ensayos para el material?",
+  "guardarMaterialEnsayos": "Guardar Ensayos",
+  "confirmacionGuardarMaterialEnsayos":  "¿Está seguro de que desea guardar la seleccion de ensayos para el material?"
+
+}

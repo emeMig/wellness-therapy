@@ -1,0 +1,132 @@
+body {
+    overflow: hidden;
+}
+
+.v-application {
+    font-family: $body-font-family, sans-serif !important;
+}
+
+.v-application p {
+    font-size: 0.90em !important;
+}
+
+
+.fs-content-wrapper {
+    @extend .mx-3,
+    .py-3;
+    height: calc(100% - 22px);
+    
+    .section-definition {
+        .v-toolbar__content {
+            @extend .pl-0,
+        }
+    }
+}
+
+.fill-fs-container {
+    height: inherit;
+}
+
+.fs-inner-content {
+    height: 100%;
+    position: relative;
+
+    .fs-inner-content-wrap {
+        /* give the outermost container a predefined size */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+
+        .inner-section {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            width: 100%;
+
+            .scrollable-content {
+                flex-grow: 1;
+                overflow: auto;
+                height: 100%;
+                /* for Firefox */
+                min-height: 0;
+            }
+        }
+    }
+}
+
+// tooltips opacos
+.custom-tooltip {
+    opacity: 1 !important;
+}
+
+// clearable icon en v-text-field
+.v-input__icon--clear button {
+    font-size: 13px !important;
+}
+
+// profile-dialog
+.profile-dialog {
+    position: absolute;
+    top: 40px;
+    right: 85px;
+
+    .v-list-item__content p {
+        font-size: 1.05em !important;
+    }
+}
+
+
+// navDrawer-items
+#app-sidebar{
+
+    .v-list-group{
+
+        .v-list-item {
+            padding: 0 !important;
+          
+            .v-list-item__icon {
+              padding-left: 0 !important;
+            }
+
+            .v-list-item__icon:first-child {
+                margin-right: 12px !important;
+            }
+
+            .v-list-group__header__append-icon {
+                margin-left: 0;
+                padding: 0;
+                min-width: 0;
+            }            
+        }
+
+        //   .v-list-group__items a {
+        //     padding-left: 12px !important;
+        // }
+    }
+}
+
+//TITULOS
+
+.title-font {
+    // font-family: ', serif' !important;
+    font-weight: 300 !important;
+    white-space: nowrap;
+
+}
+
+.title-font-bold {
+    font-weight: 400 !important;
+    overflow-wrap: normal !important;
+
+}
+
+@media (max-width: 600px) {
+    .responsive-title{
+        font-size: 1.4rem !important;
+    }
+}
+
