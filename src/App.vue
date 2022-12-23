@@ -20,9 +20,7 @@ export default {
   components: { Snackbar },
   computed: {
     ...mapGetters(["getUser"])
-  },
-  mounted(){
-    console.log(this.$vuetify.application.top)
   }
+
 }
 </script>

@@ -12,7 +12,7 @@ Vue.config.productionTip = false
 
 import { auth } from './firebase'
 
-export const app = auth.onAuthStateChanged(user => {
+auth.onAuthStateChanged(user => {
   if (user) {
     store.dispatch("detectUser", {
       email: user.email,
@@ -20,18 +20,17 @@ export const app = auth.onAuthStateChanged(user => {
     })
   }
   else 
-    store.dispatch("detectUser", user)
+    store.dispatch("detectUser", user) 
+  })
 
-    const app = new Vue({
-      router,
-      store,
-      vuetify,
-      i18n,
-      render: (h) => h(App),
-    }).$mount("#app");  
-
-    return app
-})
+// render vue app
+export const app = new Vue({
+  router,
+  store,
+  vuetify,
+  i18n,
+  render: (h) => h(App),
+}).$mount("#app");
 
 
 

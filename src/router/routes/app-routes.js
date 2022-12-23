@@ -4,7 +4,7 @@ export default [
     params: {
       path: "/login",
       name: "Login",
-      // meta: { layout: "full" },
+      meta: { layout: "full" },
     },
     defaultComponentPath: "Authentication/Login/Login",
   },
@@ -12,7 +12,7 @@ export default [
     params: {
       path: "/register",
       name: "Register",
-      // meta: { layout: "full" },
+      meta: { layout: "full" },
     },
     defaultComponentPath: "Authentication/Login/Register",
   },
@@ -74,7 +74,7 @@ export default [
     params: {
       path: "*",
       name: "PageNotFound",
-      // meta: { layout: "full" },
+      meta: { layout: "full" },
     },
     defaultComponentPath: "Error",
   },

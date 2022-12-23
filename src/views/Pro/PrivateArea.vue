@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row class="pt-4">
       <v-col cols="9">
         <titulo titulo="Área Privada de Contenidos"/>
