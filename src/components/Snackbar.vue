@@ -11,7 +11,7 @@
   >
     <v-icon class="pl-2" dark left>{{ snackbar.icon }}</v-icon>
     <span >
-      {{ $t(snackbar.text) }}
+      {{ snackbar.text }}
     </span>
 
     <v-btn fab text @click="closeSnackbar"><v-icon>close</v-icon></v-btn>

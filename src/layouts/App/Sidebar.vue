@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-    v-if ="getUser.category > 1"
+    
     app
     width="260"
     id="app-drawer"
@@ -76,12 +76,10 @@ export default {
   data() {
     return {
       items: appDrawerItems,
-      cat: this.getUser
     };
   },
   computed: {
     activeItemStyle: (state) => state.activeMenuStyle,
-    ...mapGetters(["getUser"]),
     ...mapGetters("navigations", [
       "isVisibleSideNav",
       "isMinSideNav",
