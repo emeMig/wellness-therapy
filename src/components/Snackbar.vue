@@ -8,6 +8,8 @@
     :left="snackbar.x === 'left'"
     :right="snackbar.x === 'right'"
     max-height="30px"
+    shaped
+    max-width="500px"
   >
     <v-icon class="pl-2" dark left>{{ snackbar.icon }}</v-icon>
     <span >
