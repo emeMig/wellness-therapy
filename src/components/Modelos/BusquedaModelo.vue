@@ -12,7 +12,7 @@
               inset
               v-model="filters"
               label="Psicoterpia"
-              value="psicoterapia"
+              value="Psicoterapia"
               color="warning"
               hide-details
             >   
@@ -22,7 +22,7 @@
               inset
               v-model="filters"
               label="Mindfulness"
-              value="mindfulness"
+              value="Mindfulness"
               color="success"
               hide-details
             >   
@@ -32,7 +32,7 @@
               inset
               v-model="filters"
               label="Coaching"
-              value="coaching"
+              value="Coaching"
               color="info"
               hide-details
             >   
@@ -97,13 +97,17 @@ export default {
   data() {
     return {
       textSearch: '',
-      filters: ['psicoterapia', 'mindfulness', 'coaching']
+      filters: ['Psicoterapia', 'Mindfulness', 'Coaching']
     }
   },
   methods: {
     emitirBusqueda() {    
-      const search = [...this.textSearch.trim().split(' '), ...this.filters]
+      const search = { 
+        term: this.textSearch.trim().toLowerCase(), 
+        filters: this.filters
+      }
       this.$emit('emit-search', search)
+      console.log(search)
     }
   }
 }

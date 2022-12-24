@@ -53,10 +53,6 @@
                         size="90"
                     >
                         <v-icon size="64">mdi-account</v-icon>
-                        <!-- <img
-                            src="https://cdn.vuetifyjs.com/images/john.jpg"
-                            alt="User Image"
-                        > -->
                     </v-avatar>
                     <v-btn color="primary" dark class="mt-5" rounded @click="activateMessage=true">
                         Contactar 

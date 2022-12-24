@@ -28,11 +28,11 @@
                 <star-rating 
                   :rating="value"
                   read-only
-                  increment=0.01
-                  star-size=19
-                  :active-color="secondary"
+                  :increment=0.01
+                  :star-size=19
+                  active-color="#FFA726"
                   :show-rating=false
-                  padding=0.5               
+                  :padding=0.5               
                 ></star-rating>
               </div>
         </template>

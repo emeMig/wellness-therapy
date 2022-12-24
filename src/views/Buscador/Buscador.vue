@@ -78,29 +78,28 @@ export default {
   },
 
   methods: {  
-    executeSearch(search) {
-      search = search.filter( t => t !== '')
-      const results = []
-      db.collection("usuarios").where("category", "==", 2)
-      .get()
-      .then(usuarios => {            
-          usuarios.forEach((doc) => {
-              // doc.data() is never undefined for query doc snapshots
-              results.push(doc.data())
-          })
-          this.filteredItems = []
-          for (let term of search) {
-            for (let result of results) {
-              for (let value in result) {
-                if (typeof (result[value]) === 'string' && result[value].toLowerCase() === term.toLowerCase()) {
-                  if (!this.filteredItems.includes(result)) this.filteredItems.push(result)
-                }
-              }
-            } 
+    async executeSearch(search){
+      this.filteredItems = []
+      const results = await this.filterSearch(search)
+      console.log(results)
+      for (let result of results) {
+        for (let value in result) {
+          if (typeof (result[value]) === 'string' && result[value].toLowerCase().includes(search.term.toLowerCase())) {
+            if (!this.filteredItems.includes(result)) this.filteredItems.push(result)
           }
-      })           
-    }
+        }
+      }
+    },
+    async filterSearch(search) {
+      let results = []
+      for (let filter of search.filters) {
+        const resultado = await db.collection("usuarios").where("speciality", "==", filter).get()
+        resultado.forEach((doc) => results.push(doc.data()))
+      }
+      return results
+    }   
   }
+  
 }
 </script>
 
