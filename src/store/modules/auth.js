@@ -15,39 +15,147 @@ const mutations= {
 }
 
 const actions= {
-  createUser({commit, dispatch, state}, usuario) {
-    // TODO...
+  createUser({commit, dispatch}, usuario) {
     auth.createUserWithEmailAndPassword(usuario.email, usuario.password)
       .then(res => {
         const createdUser = {
           email: res.user.email,
           uid: res.user.uid,         
         }
-        // creamos la coleccion asociada al usuario
-        db.collection("usuarios").doc(res.user.email).set({
-          category: usuario.category,
-          surname: usuario.surname,
-          lastname: usuario.lastname,
-          speciality: usuario.speciality,
-          city: usuario.city,
-          plan: usuario.plan,
-          valoration: 3
-        })
-        .then(() => {
-          createdUser.category = usuario.category
-          commit('SET_USUARIO', createdUser)
-
-          const main = state.loggedUser.category === 1 ? '/buscador' : '/private' 
-          router.push(main)
-
-          dispatch(OPEN_SNACKBAR, {
-            text: 'Usuario creado correctamente',
-            color: 'success',
-            y: 'bottom',
-            x: 'right',
-            icon: "mdi-check",
-            timeout: 4000
+        // creamos la coleccion asociada al usuario genérico
+        if ( usuario.category === 1) {
+          db.collection("usuariosGenericos").doc(res.user.email).set({
+            category: usuario.category,
+            pros: [],
+            messages: []
           })
+          .then(() => {
+            createdUser.category = usuario.category
+            commit('SET_USUARIO', createdUser)            
+            router.push('/buscador')
+            dispatch(OPEN_SNACKBAR, {
+              text: 'Usuario creado correctamente',
+              color: 'success',
+              y: 'bottom',
+              x: 'right',
+              icon: "mdi-check",
+              timeout: 4000
+            })        
+          })
+          .catch(error => {
+            dispatch(OPEN_SNACKBAR, {
+              text: error.message,
+              color: 'error',
+              y: 'bottom',
+              x: 'right',
+              icon: "mdi-alert-octagon-outline",
+              timeout: 4000
+            })
+          })
+        }
+
+        // creamos la coleccion asociada al usuario profesional
+        if ( usuario.category === 2) {
+          db.collection("usuariosProfesionales").doc(res.user.email).set({
+            category: usuario.category,
+            surname: usuario.surname,
+            lastname: usuario.lastname,
+            speciality: usuario.speciality,
+            city: usuario.city,
+            plan: usuario.plan,
+            valorations: [3],
+            patients: [],
+            messages: []
+          })
+          .then(() => {
+            createdUser.category = usuario.category
+            commit('SET_USUARIO', createdUser)            
+            router.push('/private')
+            dispatch(OPEN_SNACKBAR, {
+              text: 'Usuario creado correctamente',
+              color: 'success',
+              y: 'bottom',
+              x: 'right',
+              icon: "mdi-check",
+              timeout: 4000
+            })        
+          })
+          .catch(error => {
+            dispatch(OPEN_SNACKBAR, {
+              text: error.message,
+              color: 'error',
+              y: 'bottom',
+              x: 'right',
+              icon: "mdi-alert-octagon-outline",
+              timeout: 4000
+            })
+          })
+        }  
+      })
+  },
+  logUser({commit, dispatch}, usuario) {
+    auth.signInWithEmailAndPassword(usuario.email, usuario.password)
+      .then(res => {
+        const loggedUser = {
+          email: res.user.email,
+          uid: res.user.uid
+        }
+        // probamos recuperar usuario generico, 
+        // si no existe recuperamos usuario profesional       
+        db.collection("usuariosGenericos").doc(res.user.email).get()
+        .then( doc => { 
+          if (doc.exists) {
+            loggedUser.category = doc.data().category
+            loggedUser.pros = doc.data().pros
+            loggedUser.messages = doc.data().messages
+            commit('SET_USUARIO', loggedUser)
+            router.push('/buscador')
+            dispatch(OPEN_SNACKBAR, {
+              text: 'Usuario logado correctamente',
+              color: 'success',
+              y: 'bottom',
+              x: 'right',
+              icon: "mdi-check",
+              timeout: 4000
+            }) 
+          }
+          else { 
+            db.collection("usuariosProfesionales").doc(res.user.email).get()
+            .then( doc => { 
+              if (doc.exists) {
+                loggedUser.category = doc.data().category
+                loggedUser.surname = doc.data().surname
+                loggedUser.lastname = doc.data().lastname
+                loggedUser.speciality = doc.data().speciality
+                loggedUser.city = doc.data().city
+                loggedUser.plan = doc.data().plan
+                loggedUser.valorations = doc.data().valorations
+                loggedUser.pros = doc.data().pros
+                loggedUser.patients = doc.data().patients
+                loggedUser.messages = doc.data().messages
+                commit('SET_USUARIO', loggedUser)
+                router.push('/private')
+                dispatch(OPEN_SNACKBAR, {
+                  text: 'Usuario logado correctamente',
+                  color: 'success',
+                  y: 'bottom',
+                  x: 'right',
+                  icon: "mdi-check",
+                  timeout: 4000
+                }) 
+              }
+            })
+            .catch(error => {
+              dispatch(OPEN_SNACKBAR, {
+                text: error.message,
+                color: 'error',
+                y: 'bottom',
+                x: 'right',
+                icon: "mdi-alert-octagon-outline",
+                timeout: 94000
+              })
+            })  
+          }          
         })
         .catch(error => {
           dispatch(OPEN_SNACKBAR, {
@@ -56,42 +164,10 @@ const actions= {
             y: 'bottom',
             x: 'right',
             icon: "mdi-alert-octagon-outline",
-            timeout: 4000
+            timeout: 94000
           })
-        })
+        })       
       })
-  },
-  logUser({commit, dispatch, state}, usuario) {
-    auth.signInWithEmailAndPassword(usuario.email, usuario.password)
-      .then(res => {
-        const loggedUser = {
-          email: res.user.email,
-          uid: res.user.uid
-        }
-        db.collection("usuarios").doc(res.user.email).get()
-        .then( doc => { 
-          loggedUser.category = doc.data().category
-          loggedUser.surname = doc.data().surname
-          loggedUser.lastname = doc.data().lastname
-          loggedUser.speciality = doc.data().speciality
-          loggedUser.city = doc.data().city
-          loggedUser.plan = doc.data().plan
-          loggedUser.valoration = doc.data().valoration
-        
-          commit('SET_USUARIO', loggedUser)
-          const main = state.loggedUser.category === 1 ? '/buscador' : '/private' 
-          router.push(main)
-
-          dispatch(OPEN_SNACKBAR, {
-            text: 'Usuario logado correctamente',
-            color: 'success',
-            y: 'bottom',
-            x: 'right',
-            icon: "mdi-check",
-            timeout: 4000
-          })
-        })
-      })      
       .catch(error => {
         dispatch(OPEN_SNACKBAR, {
           text: error.message,
@@ -99,9 +175,9 @@ const actions= {
           y: 'bottom',
           x: 'right',
           icon: "mdi-alert-octagon-outline",
-          timeout: 4000
+          timeout: 94000
         })
-      })
+      })  
   },
   logoutSession({dispatch, commit}){
     auth.signOut()

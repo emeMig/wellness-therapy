@@ -23,10 +23,10 @@
           </td>
         </template>
 
-        <template #[`item.valoration`]="{ value }">
+        <template #[`item.valorations`]="{ value }">
               <div>
                 <star-rating 
-                  :rating="value"
+                  :rating="getAverageValoration(value)"
                   read-only
                   :increment=0.01
                   :star-size=19
@@ -75,6 +75,9 @@ export default {
           this.expanded.splice(index, 1)
         } else 
           this.expanded.push(item);
+      },
+      getAverageValoration(valorations) {
+        return valorations.reduce((a, b) => (a + b)) / valorations.length;
       }
     }
 

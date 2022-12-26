@@ -1,5 +1,6 @@
 <template>
   <v-snackbar
+    shaped
     v-model="snackbar.visible"
     :timeout="snackbar.timeout"
     :color="snackbar.color"
@@ -7,15 +8,13 @@
     :top="snackbar.y === 'top'"
     :left="snackbar.x === 'left'"
     :right="snackbar.x === 'right'"
-    max-height="30px"
-    shaped
-    max-width="500px"
+    max-height="90px"
+    max-width="400px"
   >
-    <v-icon class="pl-2" dark left>{{ snackbar.icon }}</v-icon>
+    <v-icon dark left>{{ snackbar.icon }}</v-icon>
     <span >
       {{ snackbar.text }}
     </span>
-
     <v-btn fab text @click="closeSnackbar"><v-icon>close</v-icon></v-btn>
 
   </v-snackbar>

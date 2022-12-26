@@ -48,7 +48,7 @@ export default {
                 { text: 'Apellidos', value: 'lastname', align: 'left', sortable: true },
                 { text: 'Especialidad', value: 'speciality', align: 'left', sortable: true },
                 { text: 'Ciudad', value: 'city', align: 'left', sortable: true },
-                { text: 'Valoracion', value: 'valoration', align: 'left', sortable: true }
+                { text: 'Valoración', value: 'valorations', align: 'left', sortable: true }
             ],
       
       confirmDialogTitle: "",
@@ -93,7 +93,7 @@ export default {
     async filterSearch(search) {
       let results = []
       for (let filter of search.filters) {
-        const resultado = await db.collection("usuarios").where("speciality", "==", filter).get()
+        const resultado = await db.collection("usuariosProfesionales").where("speciality", "==", filter).get()
         resultado.forEach((doc) => results.push(doc.data()))
       }
       return results
