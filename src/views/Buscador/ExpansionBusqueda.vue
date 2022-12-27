@@ -7,7 +7,7 @@
                         <v-list-item class="ma-0 py-0 px-2" two-line>
                             <v-list-item-content>
                             <v-list-item-title class="mt-n3"><p class="font-weight-bold">Nombre</p></v-list-item-title>
-                            <v-list-item-subtitle>{{( item.surname)}}</v-list-item-subtitle>
+                            <v-list-item-subtitle>{{ item.surname }}</v-list-item-subtitle>
                             </v-list-item-content>
                         </v-list-item>
                         </v-col>
@@ -15,7 +15,15 @@
                         <v-list-item class="ma-0 py-0 px-2" two-line>
                             <v-list-item-content>
                             <v-list-item-title class="mt-n3"><p class="font-weight-bold">Apellido</p></v-list-item-title>
-                            <v-list-item-subtitle>{{( item.lastname)}}</v-list-item-subtitle>
+                            <v-list-item-subtitle>{{ item.lastname}}</v-list-item-subtitle>
+                            </v-list-item-content>
+                        </v-list-item>
+                        </v-col>
+                        <v-col class="ma-0 pa-0 pt-2" cols="6">
+                        <v-list-item class="ma-0 py-0 px-2" two-line>
+                            <v-list-item-content>
+                            <v-list-item-title class="mt-n3"><p class="font-weight-bold">Usuario</p></v-list-item-title>
+                            <v-list-item-subtitle>{{ item.id }}</v-list-item-subtitle>
                             </v-list-item-content>
                         </v-list-item>
                         </v-col>
@@ -23,7 +31,7 @@
                         <v-list-item class="ma-0 py-0 px-2" two-line>
                             <v-list-item-content>
                             <v-list-item-title class="mt-n3"><p class="font-weight-bold">Especialidad</p></v-list-item-title>
-                            <v-list-item-subtitle>{{( item.speciality)}}</v-list-item-subtitle>
+                            <v-list-item-subtitle>{{ item.speciality }}</v-list-item-subtitle>
                             </v-list-item-content>
                         </v-list-item>
                         </v-col>
@@ -31,7 +39,7 @@
                         <v-list-item class="ma-0 py-0 px-2" two-line>
                             <v-list-item-content>
                             <v-list-item-title class="mt-n3"><p class="font-weight-bold">Ciudad</p></v-list-item-title>
-                            <v-list-item-subtitle>{{( item.city)}}</v-list-item-subtitle>
+                            <v-list-item-subtitle>{{ item.city }}</v-list-item-subtitle>
                             </v-list-item-content>
                         </v-list-item>
                         </v-col>
@@ -39,7 +47,7 @@
                         <v-list-item class="ma-0 py-0 px-2" two-line>
                             <v-list-item-content>
                             <v-list-item-title class="mt-n3"><p class="font-weight-bold">Descripción</p></v-list-item-title>
-                            <v-list-item-subtitle>{{( item.description)}}</v-list-item-subtitle>
+                            <v-list-item-subtitle>{{ item.description }}</v-list-item-subtitle>
                             </v-list-item-content>
                         </v-list-item>
                     </v-col>                
@@ -65,7 +73,7 @@
 
         <send-message-dialog
             :activate="activateMessage"
-            :destinatario="profesionalFullName"
+            :destinatario="item.id"
             @close-dialog="activateMessage=false"
             @send-message="sendMessage"
         />

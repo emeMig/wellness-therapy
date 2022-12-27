@@ -152,7 +152,7 @@ const actions= {
                 y: 'bottom',
                 x: 'right',
                 icon: "mdi-alert-octagon-outline",
-                timeout: 94000
+                timeout: 4000
               })
             })  
           }          
@@ -164,7 +164,7 @@ const actions= {
             y: 'bottom',
             x: 'right',
             icon: "mdi-alert-octagon-outline",
-            timeout: 94000
+            timeout: 4000
           })
         })       
       })
@@ -175,7 +175,7 @@ const actions= {
           y: 'bottom',
           x: 'right',
           icon: "mdi-alert-octagon-outline",
-          timeout: 94000
+          timeout: 4000
         })
       })  
   },

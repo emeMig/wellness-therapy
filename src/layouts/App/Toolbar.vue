@@ -125,8 +125,9 @@
             <template v-slot:activator="{ on }">
               <v-btn v-on="on" small fab @click="openMessageManager" class="relief mr-3">
                 <v-badge
+                  :value="getUser.messages.length"
                   color="secondary"
-                  :content="receivedMessages"
+                  :content="getUser.messages.length"
                 >
                   <v-icon :color="!bindStyle.color ? 'primary' : bindStyle.color">
                     mdi-message-text
@@ -192,7 +193,7 @@
       @close-profile="profileView=false"
     />
     <!-- Dialogs -->
-    <message-manager-dialog :activate="messageManager" @close-dialog="messageManager=false"></message-manager-dialog>
+    <message-manager-dialog :activate="messageManager" :items="getUser.messages" @close-dialog="messageManager=false"></message-manager-dialog>
   </v-app-bar>
 </template>
 
@@ -221,7 +222,7 @@ export default {
   data() {
     return {
       // user: userData,
-      receivedMessages: "3",
+      // receivedMessages: "3",
       menuProfile: [
         { icon: "person", text: this.$t("Global.Main.profileMenu"), action: () => { this.profileView=true } },
         { icon: "power_settings_new", text: this.$t("Global.Main.logoutMenu"), action: () => this.handleLogout() }

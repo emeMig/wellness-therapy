@@ -93,9 +93,16 @@ export default {
     async filterSearch(search) {
       let results = []
       for (let filter of search.filters) {
-        const resultado = await db.collection("usuariosProfesionales").where("speciality", "==", filter).get()
-        resultado.forEach((doc) => results.push(doc.data()))
+        const resultado = await db.collection("usuariosProfesionales").where("speciality", "==", filter)
+        .get()
+        resultado.forEach((doc) => {
+          const result = doc.data()
+          result.id = doc.id
+          results.push(result)
+        })
+
       }
+      console.log(results)
       return results
     }   
   }

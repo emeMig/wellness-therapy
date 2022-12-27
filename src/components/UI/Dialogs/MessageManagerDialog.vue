@@ -15,7 +15,10 @@
             </v-toolbar-title>
           </v-toolbar>
           <!-- Contenido -->
-          <v-card-text class="mt-10">
+          <v-card-text v-if="messages.length === 0" class="mt-10">
+            <h3 class="pl-2">No hay mensajes recibidos</h3>
+          </v-card-text>
+          <v-card-text v-else class="mt-10">
             <v-row v-for="(message, index) in messages" :key="index">
                 <v-card
                     class="relief-inset mb-3"
@@ -24,12 +27,12 @@
                 >
                     <v-card-title class="d-flex justify-space-between mx-3">
                         <h5>From: <span class="pl-2" style="font-weight: 500">{{ message.from }} </span></h5>
-                        <h5 style="font-weight: 600"> {{ formatDate(message.time) }} </h5>                           
+                        <h5 style="font-weight: 600"> {{ formatDate(message.date) }} </h5>                           
                     </v-card-title>
                     <v-card-text class="my-0 py-0">
                         <v-col>
                             <span>
-                                {{ message.content }}
+                                {{ message.text }}
                             </span>
                         </v-col>
                     </v-card-text>
@@ -94,9 +97,9 @@
   </template>
   
   <script>
-  
+  import { mapGetters } from 'vuex'
   import moment from "moment"
-  import messagesData from '@/utils/data/messages1.json'
+  import { db } from '@/firebase'
   import {OPEN_SNACKBAR} from "@/store/actions/snackbar"
   import ConfirmDialog from '@/components/UI/Dialogs/ConfirmDialog.vue'
   import SendMessageDialog from '@/components/UI/Dialogs/SendMessageDialog.vue'
@@ -113,29 +116,61 @@
       },
       destinatario: {
         type: String
+      },
+      items: {
+        type: Array
       }
     },
     data () {
       return {
         toSendMessage: { },
-        messages: messagesData,
         sendMessageDialog: false,
+        messages: this.items
       }
+    },
+    computed: {
+      ...mapGetters(["getUser"]),
     },
     methods: {
         async deleteMessage(index){
+          console.log(index);
             const confirm = await this.$refs.confirmDialog.open() 
             if(!confirm){
                 return    
             }
             else {
-                this.messages.splice(index,1)
-            }
+              // ENVIAMOS EL MENSAJE DESDE AQUI
+              this.messages.splice(index,1)
+              const collection = this.getUser.category === 1 ? "usuariosProfesionales" : "usuariosGenericos"
+              const deleteMessage = await db.collection(collection).doc(this.getUser.email)
+              deleteMessage.set ({
+                messages: this.messages
+              })
+              .then(() => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                  text: "Mensaje borrado correctamente",
+                  y: 'bottom',
+                  color: 'success',
+                  x: 'right',
+                  timeout: 4000
+                })
+              })
+              .catch(error => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                  text: error.message,
+                  color: 'error',
+                  y: 'bottom',
+                  x: 'right',
+                  icon: "mdi-alert-octagon-outline",
+                  timeout: 4000
+                })
+              })
+              this.closeDialog()
+          }
         },
         replyMessage(message) {
             this.toSendMessage = message
             this.sendMessageDialog = true
-
         },
         sendMessage(message) {
             // TODO + snackbar
@@ -150,36 +185,7 @@
         },
 
     // TODO: para copiar el snackbar de mensaje enviado
-      submitPdf () {
-        let errExtension = false
-        const allowedExtension = /(.pdf)$/i
-        if (this.archivoPdf !== null && !allowedExtension.exec(this.archivoPdf.name)){
-          errExtension = true
-        }
-        if(this.nuevaFirma !== null && this.archivoPdf !== null && !errExtension){
-          // Mostrar snackbar para informar al usuario de la operación exitosa
-          this.$store.dispatch(OPEN_SNACKBAR, {
-            text: this.$t("Global.ConfirmDialog.submitPdfSignature"),
-            color: 'success',
-            x: 'right',
-            timeout: 4000
-          })
-          this.closeDialog()
-        } else {
-          let errMsg = null
-          errMsg = this.$t("Global.ConfirmDialog.warningFillForm")
-          if(errExtension){
-            errMsg = this.$t("Global.ConfirmDialog.errorType")
-          }
-          // Mostrar snackbar para alertar al usuario
-          this.$store.dispatch(OPEN_SNACKBAR, {
-            text: errMsg,
-            color: 'error',
-            x: 'right',
-            timeout: 4000
-          })
-        }
-      }
+
     }
   }
   </script>

@@ -63,8 +63,10 @@
   </template>
   
   <script>
-  
-  import {OPEN_SNACKBAR} from "@/store/actions/snackbar"
+
+  import { mapGetters } from 'vuex'
+  import { db, FieldValue } from '@/firebase'
+  import { OPEN_SNACKBAR } from "@/store/actions/snackbar";
   import validations from '@/utils/validations'
   import ConfirmDialog from '@/components/UI/Dialogs/ConfirmDialog.vue'
   
@@ -88,54 +90,55 @@
         rules: validations
       }
     },
+    computed: {
+      ...mapGetters(["getUser"]),
+    },
     methods: {
-        closeDialog() {
-            this.messageText = null
-            this.$emit('close-dialog')
-        },
-        async sendMessage() {
-            const confirm = await this.$refs.confirmDialog.open()           
-            if(!confirm){
-                return    
-            }
-            else {
-                this.$emit('send-message', this.messageText)
-                this.closeDialog()
-            }
-        },
-        validate() {
-            this.validForm = this.$refs.form.validate()
-        },
-      submitPdf () {
-        let errExtension = false
-        const allowedExtension = /(.pdf)$/i
-        if (this.archivoPdf !== null && !allowedExtension.exec(this.archivoPdf.name)){
-          errExtension = true
-        }
-        if(this.nuevaFirma !== null && this.archivoPdf !== null && !errExtension){
-          // Mostrar snackbar para informar al usuario de la operación exitosa
-          this.$store.dispatch(OPEN_SNACKBAR, {
-            text: this.$t("Global.ConfirmDialog.submitPdfSignature"),
-            color: 'success',
-            x: 'right',
-            timeout: 4000
-          })
-          this.closeDialog()
-        } else {
-          let errMsg = null
-          errMsg = this.$t("Global.ConfirmDialog.warningFillForm")
-          if(errExtension){
-            errMsg = this.$t("Global.ConfirmDialog.errorType")
+      closeDialog() {
+          this.messageText = null
+          this.$emit('close-dialog')
+      },
+      async sendMessage() {
+          const confirm = await this.$refs.confirmDialog.open()           
+          if(!confirm){
+              return    
           }
-          // Mostrar snackbar para alertar al usuario
-          this.$store.dispatch(OPEN_SNACKBAR, {
-            text: errMsg,
-            color: 'error',
-            x: 'right',
-            timeout: 4000
-          })
-        }
-      }
+          else {
+              // ENVIAMOS EL MENSAJE DESDE AQUI
+              const collection = this.getUser.category === 1 ? "usuariosProfesionales" : "usuariosGenericos"
+              const addMessage = await db.collection(collection).doc(this.destinatario)
+              addMessage.update ({
+                messages: FieldValue.arrayUnion({
+                  date: new Date().getTime(),
+                  text: this.messageText,
+                  from: this.getUser.email
+                })
+              })
+              .then(() => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                text: "Mensaje enviado correctamente",
+                color: 'success',
+                y: 'bottom',
+                x: 'right',
+                timeout: 4000
+              })
+              })
+              .catch(error => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                  text: error.message,
+                  color: 'error',
+                  y: 'bottom',
+                  x: 'right',
+                  icon: "mdi-alert-octagon-outline",
+                  timeout: 4000
+                })
+              })
+              this.closeDialog()
+          }
+      },
+      validate() {
+          this.validForm = this.$refs.form.validate()
+      },
     }
   }
   </script>
