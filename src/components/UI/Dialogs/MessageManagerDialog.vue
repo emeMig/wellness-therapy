@@ -139,7 +139,7 @@
                 return    
             }
             else {
-              // ENVIAMOS EL MENSAJE DESDE AQUI
+              // BORRAMOS MENSAJE AQUI
               this.messages.splice(index,1)
               const collection = this.getUser.category === 1 ? "usuariosProfesionales" : "usuariosGenericos"
               const deleteMessage = await db.collection(collection).doc(this.getUser.email)
