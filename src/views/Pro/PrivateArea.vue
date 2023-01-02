@@ -1,10 +1,9 @@
 <template>
   <v-container fluid>
     <v-row class="pt-4">
-      <v-col cols="9">
+      <v-col cols="12" class="d-flex justify-space-between">
         <titulo titulo="Área Privada de Contenidos"/>
-      </v-col>
-      <v-col cols="3">
+        <v-spacer></v-spacer>
         <v-btn color="primary" dark class="mt-3 mx-8 justify-end" @click="addContenido">
           <span class="ma-2">Publicación</span>
           <v-icon dense>mdi-plus-thick</v-icon>
@@ -12,107 +11,20 @@
       </v-col>    
     </v-row>
 
-    <v-row class="mt-0">
+    <v-row v-if="!publications || publications.length === 0" class="mt-4 d-flex justify-center">
+      <h4 class="pt-16 font-weight-regular">Aún no hay publicaciones</h4>
+    </v-row>
+    <v-row v-else class="mt-0">
       <v-col 
-        v-for="(publication,index) in publications" 
+        v-for="(publication,index) in orderedPublications" 
         :key = "index"
         :cols="publication.size === 'full' ? '12' : '6'"      
       >
-        <v-card 
-          v-if="publication.type === 'Texto'"
-          class="px-4 py-3 relief "
-        >
-          <v-card-text>
-            <div>{{ publication.preTitle }}</div>
-            <h2 class="primary--text my-4">{{ publication.title }}</h2>
-            <div class="text--primary">
-              {{ publication.content }}
-            </div>
-          </v-card-text>
-          <v-card-actions>
-            <v-btn
-              text
-              color="teal accent-4"
-              @click="reveal = true"
-            >
-              Expandir Contenido
-            </v-btn>
-            <v-spacer></v-spacer>
-            <v-btn color="primary" @click="deletePublication(index)" icon><v-icon>mdi-delete</v-icon></v-btn>
-          </v-card-actions>
-        </v-card>
-        <v-card 
-          v-if="publication.type === 'Video'"
-          class="px-4 py-3 relief "
-        >
-          <v-row min-height="300px">
-            <v-col cols="8" min-height="300px">
-              <v-card-text>
-                <div>{{ publication.preTitle }}</div>
-                <h2 class="primary--text my-4">{{ publication.title }}</h2>
-                <div class="text--primary">
-                  {{ publication.content }}
-                </div>
-              </v-card-text>
-            </v-col>
-            <v-col cols="4">
-              <iframe 
-                class="pt-2"
-                width="80%"   
-                height="120%"
-                :src="publication.url" 
-                title="publication.title" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen
-              >
-              </iframe>              
-            </v-col>
-          </v-row>
-
-          <v-card-actions>
-            <v-btn
-              text
-              color="teal accent-4"
-              @click="reveal = true"
-            >
-              Expandir Contenido
-            </v-btn>
-            <v-spacer></v-spacer>
-            <v-btn color="primary" @click="deletePublication(index)" icon><v-icon>mdi-delete</v-icon></v-btn>
-          </v-card-actions>
-        </v-card>
-        <v-card 
-          v-if="publication.type === 'Imagen'"
-          class="px-4 py-3 relief "
-        >
-          <v-row>
-            <v-col cols="6" min-height="200px">
-              <v-card-text>
-                <div>{{ publication.preTitle }}</div>
-                <h2 class="primary--text my-4">{{ publication.title }}</h2>
-                <div class="text--primary">
-                  {{ publication.content }}
-                </div>
-              </v-card-text>
-            </v-col>
-            <v-col cols="6">
-              <v-img :src="publication.url" :alt="publication.title"/>
-            </v-col>
-          </v-row>
-
-          <v-card-actions>
-            <v-btn
-              text
-              color="teal accent-4"
-              @click="reveal = true"
-            >
-              Expandir Contenido
-            </v-btn>
-            <v-spacer></v-spacer>
-            <v-btn color="primary" @click="deletePublication(index)" icon><v-icon>mdi-delete</v-icon></v-btn>
-          </v-card-actions>
-        </v-card>
+        <content-card 
+          :publication="publication" 
+          :index="index" 
+          @delete-publication="deletePublication"
+        />
       </v-col>    
     </v-row>
     <content-dialog
@@ -130,80 +42,107 @@
 </template>
 
 <script>
+
+import { db, FieldValue } from '@/firebase'
+import { mapGetters } from 'vuex'
+import {OPEN_SNACKBAR} from "@/store/actions/snackbar"
 import Titulo from "@/components/Modelos/TituloModelo";
 import ContentDialog from "@/components/UI/Dialogs/ContentDialog.vue"
 import ConfirmDialog from '@/components/UI/Dialogs/ConfirmDialog.vue'
+import ContentCard from '@/views/Pro/ContentCard.vue'
+
 export default {
   name: "AreaPrivada",
   components: {
     Titulo,
+    ContentCard,
     ContentDialog,
     ConfirmDialog
   },
   data() {
     return {
       openContentDialog: false,
-      publications: [
-        {
-          header: 'Publicación 1',
-          title: 'Titulo1',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          size: 'full',
-          type: 'Texto',
-          url: ''
-        },
-        {
-          header: 'Publicación 2',
-          title: 'Titulo2',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          size: '',
-          type: 'Texto',
-          url: ''
-        },
-        {
-          header: 'Publicación 3',
-          title: 'Titulo3',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          size: '',
-          type: 'Texto',
-          url: ''
-        },
-        {
-          header: 'Publicación 4',
-          title: 'Titulo4',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          size: 'full',
-          type: 'Video',
-          url: 'https://www.youtube.com/embed/XXXaoKi7IY0'
-        },
-        {
-          header: 'Publicación 5',
-          title: 'Titulo5',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          size: 'full',
-          type: 'Imagen',
-          url: 'https://www.mgc.es/wp-content/uploads/2020/04/mindfulness-playa.jpg'
-        },
-      ]
+      publications: null,
+      expansion: false
     }
   },
+  computed: {
+    ...mapGetters(["getUser"]),
+    orderedPublications() {
+        let orderedPublications = this.publications
+        if (orderedPublications.length > 0) {
+          return orderedPublications.sort((a,b) => b.date - a.date)
+        } else 
+          return []
+      }
+  },
   methods: {
+    getPublications() {   
+      db.collection("usuariosProfesionales").doc(this.getUser.email).get()
+      .then( ( doc ) => {
+        this.publications = doc.data().publications
+      })
+      .catch(error => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                  text: error.message,
+                  color: 'error',
+                  y: 'bottom',
+                  x: 'right',
+                  icon: "mdi-alert-octagon-outline",
+                  timeout: 4000
+                })
+              })
+      
+    },
     addContenido() {
       this.openContentDialog = true
     },
     addPublication(publication) {
-      console.log(publication);
-      this.publications.unshift(publication)
+      console.log(publication)
+      const updatePublication = db.collection("usuariosProfesionales").doc(this.getUser.email)
+      updatePublication.update({
+        publications: FieldValue.arrayUnion(publication)
+      })
+      .then (()=> this.getPublications() )
+      .catch(error => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                  text: error.message,
+                  color: 'error',
+                  y: 'bottom',
+                  x: 'right',
+                  icon: "mdi-alert-octagon-outline",
+                  timeout: 4000
+                })
+              })      
     },
-    async deletePublication(index) {
+    async deletePublication(publication) {
+      console.log(publication);
       const confirm = await this.$refs.confirmDialog.open() 
         if(!confirm){
             return    
         }
         else {
-            this.publications.splice(index,1)
+          const deletePublication = db.collection("usuariosProfesionales").doc(this.getUser.email)
+          deletePublication.update({
+            publications: FieldValue.arrayRemove(publication)
+          })
+          .then (()=> {
+            this.getPublications() })
+          .catch(error => {
+                this.$store.dispatch(OPEN_SNACKBAR, {
+                  text: error.message,
+                  color: 'error',
+                  y: 'bottom',
+                  x: 'right',
+                  icon: "mdi-alert-octagon-outline",
+                  timeout: 4000
+                })
+              }) 
         }
       }
+  },
+  mounted() {
+    this.getPublications()
   }
 
 

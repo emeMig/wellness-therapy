@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import user from "./modules/user";
 import sidebar from "./modules/sidebar";
 import header from "./modules/header";
 import translation from "./modules/translation";
-import notifications from "./modules/notifications";
 import theme from "./modules/theme";
 import loader from "./modules/loader"
 import auth from '@/store/modules/auth'
@@ -16,7 +14,6 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   modules: {
     auth,
-    user,
     search,
     snackbar,
     navigations: {
@@ -33,7 +30,6 @@ export default new Vuex.Store({
       },
     },
     translation,
-    notifications,
     loader
   }
 })

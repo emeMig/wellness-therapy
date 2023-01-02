@@ -34,7 +34,7 @@ router.beforeEach((to, from, next) => {
 
     const usuario = auth.currentUser
 
-    console.log("desde router", usuario)
+    //console.log("desde router", usuario)
 
 
     if(usuario === null) {

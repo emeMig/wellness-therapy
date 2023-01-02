@@ -151,7 +151,9 @@ export default {
             if(!confirm){
                 return    
             }
-            else {    
+            else {
+                const timestamp = new Date().getTime()
+                this.editedItem.date = timestamp
                 this.$emit('add-publication', this.editedItem)
                 this.closeDialog()
             }

@@ -28,10 +28,10 @@ export default [
   {
     params: {
       path: "/myareas",
-      name: "Myareas",
+      name: "MyAreas",
       meta: { requiresAuth: true },
     },
-    defaultComponentPath: "MyAreas",
+    defaultComponentPath: "MyAreas/MyAreas",
     navs: true,
   },
   {

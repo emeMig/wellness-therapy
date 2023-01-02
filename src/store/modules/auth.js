@@ -11,6 +11,9 @@ const state = {
 const mutations= {
   SET_USUARIO(state, payload) {
     state.loggedUser = payload
+  },
+  SET_MESSAGES(state, payload) {
+    state.loggedUser.messages = payload
   }
 }
 
@@ -65,7 +68,8 @@ const actions= {
             plan: usuario.plan,
             valorations: [3],
             patients: [],
-            messages: []
+            messages: [],
+            publications: []
           })
           .then(() => {
             createdUser.category = usuario.category
@@ -130,7 +134,6 @@ const actions= {
                 loggedUser.city = doc.data().city
                 loggedUser.plan = doc.data().plan
                 loggedUser.valorations = doc.data().valorations
-                loggedUser.pros = doc.data().pros
                 loggedUser.patients = doc.data().patients
                 loggedUser.messages = doc.data().messages
                 commit('SET_USUARIO', loggedUser)
@@ -196,11 +199,15 @@ const actions= {
   },
   detectUser({ commit }, usuario) {
     commit('SET_USUARIO', usuario)
+  },
+  updateMessages({ commit }, messages) {
+    commit('SET_MESSAGES', messages)
   }
 }
 
 const getters= {
   getUser: () => state.loggedUser,
+  getMessages: () => state.loggedUser.messages
 }
 
 export default {

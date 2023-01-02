@@ -24,7 +24,7 @@
                           v-model="form.username"
                           @input="validate"
                           :rules="[rules.requiredUser]"
-                          label="Correo electrónico"
+                          placeholder="Correo electrónico"
                           solo
                           flat
                           dense
@@ -36,7 +36,7 @@
                           prepend-inner-icon="vpn_key"
                           v-model="form.password"
                           :rules="[rules.requiredPass]"
-                          label="Contraseña"
+                          placeholder="Contraseña"
                           @input="validate"
                           @click:append="showPwd = !showPwd"
                           solo

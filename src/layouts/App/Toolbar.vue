@@ -78,7 +78,7 @@
       >
     </v-btn>
 
-    <!-- abrir mis areas privadas-->
+    <!-- abrir Áreas privadas-->
     <v-tooltip content-class='custom-tooltip' bottom>
       <template v-slot:activator="{ on, attrs }">
         <div v-on="on" v-bind="attrs" >
@@ -102,7 +102,17 @@
       <span v-else >Añadir Paciente</span>
     </v-tooltip>
 
-
+    <!-- abrir búsqueda -->
+    <v-tooltip content-class='custom-tooltip' bottom>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn v-if="getUser.category === 1" v-on="on" v-bind="attrs" small fab @click="handleSearch" class="relief mr-3">
+          <v-icon :color="!bindStyle.color ? 'primary' : bindStyle.color">
+            mdi-magnify
+          </v-icon>
+        </v-btn>
+      </template>
+      <span>Modo visual</span>
+    </v-tooltip>
 
     <!-- abrir modo visual -->
     <v-tooltip content-class='custom-tooltip' bottom>
@@ -125,9 +135,9 @@
             <template v-slot:activator="{ on }">
               <v-btn v-on="on" small fab @click="openMessageManager" class="relief mr-3">
                 <v-badge
-                  :value="getUser.messages.length"
+                  :value="getMessages.length"
                   color="secondary"
-                  :content="getUser.messages.length"
+                  :content="getMessages.length"
                 >
                   <v-icon :color="!bindStyle.color ? 'primary' : bindStyle.color">
                     mdi-message-text
@@ -252,7 +262,7 @@ export default {
       "isFloating",
     ]),
 
-    ...mapGetters(["getUser"]),
+    ...mapGetters(["getUser", "getMessages"]),
 
     ...mapGetters(["locale"]),
     formatPreviousAccessDateTime() {
@@ -285,7 +295,10 @@ export default {
       this.$store.dispatch("navigations/setSidenavVisibility");
     },
     handleDashboard(){
-      this.$router.push('/myAreas')
+      this.$router.push('/myareas')
+    },
+    handleSearch(){
+      this.$router.push('/buscador')
     },
     handleTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark

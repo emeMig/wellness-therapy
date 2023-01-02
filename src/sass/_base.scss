@@ -135,3 +135,18 @@ body {
     line-height: 0 !important;
 }
 
+// text ellipsis
+.text-ellipsis{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+// publication-author container
+.theme--light .publication-author {
+    background-color: #eaeaea
+}
+.theme--dark .publication-author {
+    background-color: #222222
+}

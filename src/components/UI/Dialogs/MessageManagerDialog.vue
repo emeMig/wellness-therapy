@@ -64,7 +64,7 @@
                                     v-bind="attrs" 
                                     v-on="on" 
                                     delay-open="200"
-                                    @click="deleteMessage(index)"
+                                    @click="deleteMessage(message)"
                                 >
                                     mdi-delete
                                 </v-icon>
@@ -91,15 +91,14 @@
             :activate="sendMessageDialog"
             :destinatario="toSendMessage.from"
             @close-dialog="sendMessageDialog=false"
-            @send-message="sendMessage"
         />
     </div>
   </template>
   
   <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
   import moment from "moment"
-  import { db } from '@/firebase'
+  import { db, FieldValue } from '@/firebase'
   import {OPEN_SNACKBAR} from "@/store/actions/snackbar"
   import ConfirmDialog from '@/components/UI/Dialogs/ConfirmDialog.vue'
   import SendMessageDialog from '@/components/UI/Dialogs/SendMessageDialog.vue'
@@ -124,35 +123,45 @@
     data () {
       return {
         toSendMessage: { },
-        sendMessageDialog: false,
-        messages: this.items
+        sendMessageDialog: false
       }
     },
     computed: {
       ...mapGetters(["getUser"]),
+      messages() {
+        const messages = this.items
+        if (messages.length > 0) {
+          return messages.sort((a,b) => b.date - a.date)
+        } else 
+          return []
+      }
     },
     methods: {
-        async deleteMessage(index){
-          console.log(index);
+      ...mapActions(["updateMessages"]),
+        async deleteMessage(message){
             const confirm = await this.$refs.confirmDialog.open() 
             if(!confirm){
                 return    
             }
             else {
               // BORRAMOS MENSAJE AQUI
-              this.messages.splice(index,1)
-              const collection = this.getUser.category === 1 ? "usuariosProfesionales" : "usuariosGenericos"
+              const collection = this.getUser.category === 2 ? "usuariosProfesionales" : "usuariosGenericos"
               const deleteMessage = await db.collection(collection).doc(this.getUser.email)
-              deleteMessage.set ({
-                messages: this.messages
+              deleteMessage.update ({
+                messages: FieldValue.arrayRemove(message)
               })
               .then(() => {
-                this.$store.dispatch(OPEN_SNACKBAR, {
-                  text: "Mensaje borrado correctamente",
-                  y: 'bottom',
-                  color: 'success',
-                  x: 'right',
-                  timeout: 4000
+                const collection = this.getUser.category === 2 ? "usuariosProfesionales" : "usuariosGenericos"
+                db.collection(collection).doc(this.getUser.email).get()
+                .then((doc) => {
+                  this.updateMessages(doc.data().messages)
+                  this.$store.dispatch(OPEN_SNACKBAR, {
+                    text: "Mensaje borrado correctamente",
+                    y: 'bottom',
+                    color: 'success',
+                    x: 'right',
+                    timeout: 4000
+                  })
                 })
               })
               .catch(error => {
@@ -171,10 +180,6 @@
         replyMessage(message) {
             this.toSendMessage = message
             this.sendMessageDialog = true
-        },
-        sendMessage(message) {
-            // TODO + snackbar
-            console.log(message)
         },
         formatDate(time) {
             return moment(time).format('hh:mm DD-MM-YYYY') 
