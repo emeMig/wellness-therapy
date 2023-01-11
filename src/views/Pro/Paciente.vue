@@ -3,8 +3,8 @@
     <v-row class="pt-4">
       <v-col cols="12">
         <titulo 
-          titulo="Área de Paciente" 
-          subtitulo="Paciente1"
+          :titulo="patient.name" 
+          :subtitulo="patientId"
         />
       </v-col>
     </v-row>
@@ -26,8 +26,8 @@
             </v-col>
             <v-col cols="6">
               <v-text-field
-              label="Apellido"
-              value="Sánchez García"        
+                label="Apellido"
+                value="Sánchez García"        
               ></v-text-field>
             </v-col>
           </v-row>
@@ -246,7 +246,9 @@
   
 </template>
   
-  <script>
+<script>
+  import { db } from '@/firebase'
+  import { mapGetters } from 'vuex'
   import Titulo from "@/components/Modelos/TituloModelo"
   export default {
     name: "Paciente",
@@ -255,6 +257,9 @@
     },
     data() {
       return {
+        patientId: this.$route.params.id,
+        patient: null,
+        patientData: null,
         items: [
           { id: 1, date: '01-11-2022', name: 'sesión inicial', duration: '50m'},
           { id: 2, date: '08-11-2022', name: 'sesión de encuadre', duration: '50m'},
@@ -269,12 +274,26 @@
         ]
       }
     },
+    computed:{
+      ...mapGetters(["getUser"])
+    },
     methods: {
+      getPatient(){
+        const patientInfo = db.collection("usuariosProfesionales").doc(this.getUser.email)
+        patientInfo.get()
+          .then( (doc) => {
+            this.patient = doc.data().patients.filter( p => p.id = this.patientId)[0]
+            console.log(this.patient.name)
+          })
+      },
       newSesion(){
-    
+        
       }
-    }
+    },
 
+    created(){
+      this.getPatient()
+    }
   }
   </script>
   
