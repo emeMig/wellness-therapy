@@ -45,26 +45,8 @@ export default [
   },
   {
     params: {
-      path: "/pacientes/paciente1",
-      name: "pacientes/Paciente1",
-      meta: { requiresAuth: true },
-    },
-    defaultComponentPath: "Pro/Paciente",
-    navs: true,
-  },
-  {
-    params: {
-      path: "/pacientes/paciente2",
-      name: "pacientes/Paciente2",
-      meta: { requiresAuth: true },
-    },
-    defaultComponentPath: "Pro/Paciente",
-    navs: true,
-  },
-  {
-    params: {
-      path: "/pacientes/paciente3",
-      name: "pacientes/Paciente3",
+      path: "/pacientes/:id",
+      name: "Pacientes",
       meta: { requiresAuth: true },
     },
     defaultComponentPath: "Pro/Paciente",

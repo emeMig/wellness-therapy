@@ -4,10 +4,7 @@
       <v-col cols="12" class="d-flex justify-space-between">
         <titulo titulo="Mis Contenidos Privados"/>
         <v-spacer></v-spacer>
-        <v-btn color="primary" dark class="mt-3 mx-8 justify-end" @click="emitValorations">
-          <span class="ma-2">Valorar</span>
-          <v-icon dense>mdi-star</v-icon>
-        </v-btn>
+
       </v-col>    
     </v-row>
 
@@ -21,10 +18,10 @@
         :key = "index"
         :cols="publication.size === 'full' ? '12' : '6'"      
       >
-        <content-card 
+        <content-card-user 
           :publication="publication" 
           :index="index" 
-          @delete-publication="deletePublication"
+          @open-valoration="openValoration"
         />
       </v-col>    
     </v-row>
@@ -38,33 +35,46 @@
     <confirm-dialog 
             ref="confirmDialog"
             message="¿Desea borrar esta publicación?"
-        />
+    />
+    <valoration-dialog 
+      v-if="openValorationDialog"
+      :activate="openValorationDialog"
+      :pro="proId"
+      :proName="proName"
+      @close-dialog="openValorationDialog=false"
+    />
+
   </v-container>
 </template>
 
 <script>
 
 import { db } from '@/firebase'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import {OPEN_SNACKBAR} from "@/store/actions/snackbar"
 import Titulo from "@/components/Modelos/TituloModelo";
 import ContentDialog from "@/components/UI/Dialogs/ContentDialog.vue"
 import ConfirmDialog from '@/components/UI/Dialogs/ConfirmDialog.vue'
-import ContentCard from '@/views/MyAreas/ContentCardUser.vue'
+import ValorationDialog from '@/components/UI/Dialogs/ValorationDialog.vue'
+import ContentCardUser from '@/views/MyAreas/ContentCardUser.vue'
 
 export default {
   name: "MyAreas",
   components: {
     Titulo,
-    ContentCard,
+    ContentCardUser,
     ContentDialog,
-    ConfirmDialog
+    ConfirmDialog,
+    ValorationDialog
   },
   data() {
     return {
       openContentDialog: false,
       allPublications: [],
-      expansion: false
+      expansion: false,
+      openValorationDialog: false,
+      proId: '',
+      proName:''
     }
   },
   computed: {
@@ -78,7 +88,9 @@ export default {
       }
   },
   methods: {
+    ...mapActions(["setOverlay"]),
     getPublications() {  
+      this.setOverlay(true)
       for(let pro of this.getUser.pros) {
         db.collection("usuariosProfesionales").doc(pro).get()
           .then( (doc) => {
@@ -100,10 +112,13 @@ export default {
             timeout: 4000
           })
         })
+        .finally(()=> this.setOverlay(false))
       }            
     },
-    emitValorations() {
-      console.log('emite valoracion');
+    openValoration(pro) {
+      this.proId = pro.id
+      this.proName = pro.name
+      this.openValorationDialog = true
     }
   },
   mounted() {    

@@ -107,7 +107,6 @@ export default {
         filters: this.filters
       }
       this.$emit('emit-search', search)
-      console.log(search)
     }
   }
 }

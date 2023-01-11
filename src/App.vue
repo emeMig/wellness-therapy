@@ -9,17 +9,25 @@
       </transition>
     </v-main>
     <router-view name="footer" />
+    <overlay :overlay="getOverlay"></overlay> 
   </v-app>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import Snackbar from '@/components/Snackbar'
+import Overlay from '@/components/Overlay'
 
 export default {
-  components: { Snackbar },
+  components: { Snackbar, Overlay },
   computed: {
-    ...mapGetters(["getUser"])
+    ...mapGetters(["getUser", "getOverlay"])
+  },
+  methods: {
+    ...mapActions(["loadLocalStorage"])
+  },
+  created(){
+    this.loadLocalStorage()
   }
 
 }

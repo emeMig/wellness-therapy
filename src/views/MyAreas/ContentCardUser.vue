@@ -5,8 +5,19 @@
           class="px-4 py-3 relief "
         >
           <div class="d-flex justify-space-between px-5 mb-3 publication-author">
-              <span>{{ publication.authorName }} / {{ publication.authorId }}</span>
-              <span>{{ formatDate(publication.date) }}</span>
+              <span>
+                {{ publication.authorName }} / {{ publication.authorId }}
+                <v-tooltip content-class='custom-tooltip' right>  
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn v-on="on" v-bind="attrs" icon color="primary" dark class="pa-0" @click="openValoration({ id: publication.authorId, name: publication.authorName} )">
+                      <v-icon dense>mdi-star-circle</v-icon>
+                    </v-btn> 
+                  </template>
+                  <span>Valorar Profesional</span>
+                </v-tooltip>   
+              </span>
+
+              <span class="mt-1">{{ formatDate(publication.date) }}</span>
           </div>
           <v-card-text>
             <div class="d-flex justify-space-between">
@@ -39,8 +50,18 @@
           min-height="300px"
         >
           <div class="d-flex justify-space-between px-5 mb-3 publication-author">
-            <span>{{ publication.authorName }} / {{ publication.authorId }}</span>
-            <span>{{ formatDate(publication.date) }}</span>
+            <span>{{ publication.authorName }} / {{ publication.authorId }}
+              <v-tooltip content-class='custom-tooltip' right>  
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn v-on="on" v-bind="attrs" icon color="primary" dark class="pa-0" @click="openValoration({ id: publication.authorId, name: publication.authorName})">
+                    <v-icon dense>mdi-star-circle</v-icon>
+                  </v-btn> 
+                </template>
+                <span>Valorar Profesional</span>
+              </v-tooltip> 
+            </span>
+
+            <span class="mt-1">{{ formatDate(publication.date) }}</span>
           </div>
           <v-row>
             <v-col cols="8" min-height="280px">
@@ -91,8 +112,17 @@
           class="px-4 py-3 relief "
         >
           <div class="d-flex justify-space-between px-5 mb-3 publication-author">
-            <span>{{ publication.authorName }} / {{ publication.authorId }}</span>
-            <span>{{ formatDate(publication.date) }}</span>
+            <span>{{ publication.authorName }} / {{ publication.authorId }}
+              <v-tooltip content-class='custom-tooltip' right>  
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn v-on="on" v-bind="attrs" icon color="primary" dark class="pa-0" @click="openValoration({ id: publication.authorId, name: publication.authorName })">
+                      <v-icon dense>mdi-star-circle</v-icon>
+                    </v-btn> 
+                  </template>
+                  <span>Valorar Profesional</span>
+                </v-tooltip>           
+            </span>
+            <span class="mt-1">{{ formatDate(publication.date) }}</span>
           </div>
           <v-row>
             <v-col cols="6" min-height="200px">
@@ -153,6 +183,9 @@ export default {
     methods: {
         formatDate(time) {
             return moment(time).format('hh:mm DD-MM-YYYY') 
+        },
+        openValoration(id){
+          this.$emit('open-valoration', id)
         }
     }
 }

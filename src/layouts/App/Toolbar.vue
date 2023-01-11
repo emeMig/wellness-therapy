@@ -197,6 +197,11 @@
       :title="confirmDialogTitle"
       :message="confirmDialogMessage"
     />
+    <add-patient-dialog 
+      :activate= "openAddPatientDialog"
+      @close-dialog="openAddPatientDialog=false"
+    
+    />
     <profile-card
       v-if="profileView"
       :activate="profileView"
@@ -212,8 +217,7 @@
 import moment from "moment"
 import { mapGetters, mapActions } from 'vuex'
 import { availableLocale } from "@/config/locale";
-// import AuthApi from "@/mixins/Services/AuthApi";
-// import logoutSession from "@/mixins/Logout";
+import AddPatientDialog from "@/components/UI/Dialogs/AddPatientDialog";
 import ConfirmDialog from "@/components/UI/Dialogs/ConfirmDialog";
 import ProfileCard from "./ProfileCard.vue"
 import messageManagerDialog from '@/components/UI/Dialogs/MessageManagerDialog.vue';
@@ -223,7 +227,8 @@ export default {
   components: {
     ConfirmDialog,
     messageManagerDialog,
-    ProfileCard
+    ProfileCard,
+    AddPatientDialog
   },
   props: {
     handleSettingsDrawer: Function,
@@ -231,21 +236,16 @@ export default {
   // mixins: [AuthApi, logoutSession],
   data() {
     return {
-      // user: userData,
-      // receivedMessages: "3",
       menuProfile: [
         { icon: "person", text: this.$t("Global.Main.profileMenu"), action: () => { this.profileView=true } },
         { icon: "power_settings_new", text: this.$t("Global.Main.logoutMenu"), action: () => this.handleLogout() }
       ],
-      // menuMessages: [
-      //   { icon: "inbox", text: 'Mensajes recibidos', action: () => { this.openMessageManager() } },
-      //   { icon: "mdi-message-arrow-right-outline", text: 'Enviar Mensaje', action: () => '' }
-      // ],
       confirmDialogTitle: "",
       confirmDialogMessage: null,
       profileView: false,
       langs: availableLocale,
-      messageManager: false
+      messageManager: false,
+      openAddPatientDialog: false
     };
   },
   computed: {  
@@ -307,7 +307,7 @@ export default {
       this.$store.dispatch("setLocale", value)
     },
     handleAddUser() {
-      console.log('addUser');
+      this.openAddPatientDialog = true
     },
     async handleLogout() {
       this.confirmDialogTitle = this.$t("Global.ConfirmDialog.logoutTitle")

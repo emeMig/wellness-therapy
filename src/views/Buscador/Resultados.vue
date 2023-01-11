@@ -23,7 +23,7 @@
           </td>
         </template>
 
-        <template #[`item.valorations`]="{ value }">
+        <template #[`item.patients`]="{ value }">
               <div>
                 <star-rating 
                   :rating="getAverageValoration(value)"
@@ -76,8 +76,16 @@ export default {
         } else 
           this.expanded.push(item);
       },
-      getAverageValoration(valorations) {
-        return valorations.reduce((a, b) => (a + b)) / valorations.length;
+      getAverageValoration(patients) {
+        if (patients.length) {
+          const valorations = patients.map( p => p.valoration).filter( p => p !== null)
+          if (valorations.length) 
+            return valorations.reduce((a, b) => (a + b)) / valorations.length
+        } else 
+            return 0
+
+
+
       }
     }
 

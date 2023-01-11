@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import routes from "./routes";
-import { auth } from "../firebase"
+// import { auth } from "../firebase"
 
 const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location) {
@@ -29,24 +29,24 @@ router.afterEach(() => {
   window.scrollTo(0, 0);
 });
 
-router.beforeEach((to, from, next) => {
-  if(to.matched.some(record => record.meta.requiresAuth)) {
+// router.beforeEach((to, from, next) => {
+//   if(to.matched.some(record => record.meta.requiresAuth)) {
 
-    const usuario = auth.currentUser
+//     const usuario = auth.currentUser
 
-    //console.log("desde router", usuario)
+//     console.log("desde router", usuario)
 
 
-    if(usuario === null) {
-      next({ name: 'Login'})      
-    } else {
-      next();
-    }
+//     if(usuario === null) {
+//       next({ name: 'Login'})      
+//     } else {
+//       next();
+//     }
     
-  }
-  else {
-    next()
-  }
-})
+//   }
+//   else {
+//     next()
+//   }
+// })
 
 export default router;

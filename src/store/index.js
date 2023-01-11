@@ -8,6 +8,7 @@ import loader from "./modules/loader"
 import auth from '@/store/modules/auth'
 import snackbar from '@/store/modules/snackbar'
 import search from '@/store/modules/search'
+// import VuexPersistence from 'vuex-persist'
 
 Vue.use(Vuex)
 

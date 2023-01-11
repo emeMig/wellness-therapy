@@ -13,7 +13,7 @@
                         <span class=" mt-2 mb-4"><h3 class="primary--text title-font text-shadowed">{{ $t('Global.Main.appName') }}</h3></span>
                       </div>
                     </div>
-                    <v-sheet max-width="420" :height="category===1 ? 300 : 440" class="mx-auto" color="transparent">
+                    <v-sheet max-width="420" min-height="300" class="mx-auto" color="transparent">
 
                         <div class="text-h5 mt-n3 mb-3">
                             <span >
@@ -68,7 +68,7 @@
                             v-if="registering"
                             @submit.prevent="!validForm ? null : createHandler()"
                             ref="loginForm"
-                            class="mt-8"
+                            class="mt-8 pb-6"
                         >
                             <v-text-field
                                 autocomplete="off"
@@ -174,19 +174,35 @@
                                         dense
                                     />
                                 </v-col> 
-                                <v-row class="ma-0 pa-0">
-                                <v-col class="ma-0 pa-0 pr-1" cols="12">
-                                    <v-text-field
+                                <v-col class="ma-0 pa-2 pr-1" cols="12">
+                                    <v-textarea
                                         v-if="category === 2"
-                                        v-model="selectedPlan"
+                                        v-model="form.description"
                                         @input="validate"
-                                        label="PLAN SELECCIONADO: "
-                                        outlined
-                                        readonly
+                                        background-color="#FFFFFF"
                                         dense
-                                    ></v-text-field>                                    
+                                        clearable
+                                        auto-grow 
+                                        :rules="[rules.maxLength200]"
+                                        label="Texto de presentación"
+                                        counter
+                                        rows="2"
+                                        row-height="30"
+                                    ></v-textarea>                                    
                                 </v-col>
-                            </v-row> 
+                                <v-row class="ma-0 pa-0">
+                                  <v-col class="ma-0 pa-0 pr-1" cols="12">
+                                      <v-text-field
+                                          v-if="category === 2"
+                                          v-model="selectedPlan"
+                                          @input="validate"
+                                          label="PLAN SELECCIONADO: "
+                                          outlined
+                                          readonly
+                                          dense
+                                      ></v-text-field>                                    
+                                  </v-col>
+                                </v-row> 
                             </v-row>
                             <v-btn v-if="category===2 && selectedPlan===null" :class="{ 'mt-2':true, 'relief-outset': validForm }" block @click="selectPlan" :disabled="!validForm"
                             >
@@ -224,9 +240,8 @@
     lastname: "",
     speciality: "",
     city: "",
-    plan: ""
-
-    
+    plan: "",
+    description: ""   
   };
   
   import { mapActions } from 'vuex'

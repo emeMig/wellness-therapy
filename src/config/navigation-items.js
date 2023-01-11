@@ -1,35 +1,32 @@
 export default [
-  { icon: "mdi-view-dashboard", title: "PrivateArea", name: "PrivateArea", roles: [1,2], i18n: "privateArea" },
+  { icon: "mdi-view-dashboard", title: "PrivateArea", name: "PrivateArea", i18n: "Mi Área Privada" },
   {
     title: "Pacientes",
     group: "pacientes",
     icon: "mdi-account-supervisor-circle",
-    i18n: "pacientes",
-    roles: [1,2],
+    i18n: "Mis Pacientes",
     items: [
       {
         name: "Paciente1",
         title: "Paciente1",
         prependIcon: "mdi-account-supervisor-circle",
         icon: "mdi-account-check",
-        i18n: "paciente1",
-        roles: [1,2]
+        i18n: 'nombre paciente 1'
+
       },
       {
         name: "Paciente2",
         title: "Paciente2",
         prependIcon: "mdi-account-supervisor-circle",
         icon: "mdi-account-check",
-        i18n: "paciente2",
-        roles: [1,2]
+        i18n: 'nombre paciente 2'
       },
       {
         name: "Paciente3",
         title: "Paciente3",
         prependIcon: "mdi-account-supervisor-circle",
         icon: "mdi-account-check",
-        i18n: "paciente3",
-        roles: [1,2]
+        i18n: 'nombre paciente '
       }
     ],
   },

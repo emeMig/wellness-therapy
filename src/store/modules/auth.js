@@ -6,18 +6,37 @@ import { OPEN_SNACKBAR } from "@/store/actions/snackbar"
 
 const state = {
   loggedUser: null,
+
 }
 
 const mutations= {
   SET_USUARIO(state, payload) {
     state.loggedUser = payload
+    localStorage.setItem('profile',JSON.stringify(state.loggedUser))
   },
   SET_MESSAGES(state, payload) {
     state.loggedUser.messages = payload
+  },
+  ADD_PATIENT(state, payload) {
+    state.loggedUser.patients.push(payload)
+  },
+  LOAD_STORAGE(state, payload) {
+    state.loggedUser = payload
   }
 }
 
 const actions= {
+  loadLocalStorage({ commit }) {
+    if (localStorage.getItem('profile')) {
+      commit( 
+        'LOAD_STORAGE', 
+        JSON.parse(localStorage.getItem('profile')) 
+        )
+      return
+    }
+    localStorage.setItem('profile', JSON.stringify({}))
+  },
+
   createUser({commit, dispatch}, usuario) {
     auth.createUserWithEmailAndPassword(usuario.email, usuario.password)
       .then(res => {
@@ -66,7 +85,8 @@ const actions= {
             speciality: usuario.speciality,
             city: usuario.city,
             plan: usuario.plan,
-            valorations: [3],
+            description: usuario.description,
+            valorations: [],
             patients: [],
             messages: [],
             publications: []
@@ -113,6 +133,7 @@ const actions= {
             loggedUser.pros = doc.data().pros
             loggedUser.messages = doc.data().messages
             commit('SET_USUARIO', loggedUser)
+
             router.push('/buscador')
             dispatch(OPEN_SNACKBAR, {
               text: 'Usuario logado correctamente',
@@ -133,6 +154,7 @@ const actions= {
                 loggedUser.speciality = doc.data().speciality
                 loggedUser.city = doc.data().city
                 loggedUser.plan = doc.data().plan
+                loggedUser.description = doc.data().description
                 loggedUser.valorations = doc.data().valorations
                 loggedUser.patients = doc.data().patients
                 loggedUser.messages = doc.data().messages
@@ -186,6 +208,7 @@ const actions= {
     auth.signOut()
       .then(()=> {
         commit('SET_USUARIO', null)
+        localStorage.clear()
         dispatch(OPEN_SNACKBAR, {
           text: 'Sesión cerrada correctamente',
           color: 'success',
@@ -202,12 +225,17 @@ const actions= {
   },
   updateMessages({ commit }, messages) {
     commit('SET_MESSAGES', messages)
-  }
+  },
+  updatePatients({ commit }, paciente) {
+    commit('ADD_PATIENT', paciente)
+  },
 }
 
 const getters= {
   getUser: () => state.loggedUser,
-  getMessages: () => state.loggedUser.messages
+  getMessages: () => state.loggedUser.messages,
+  getPatients: () => state.loggedUser.patients,
+  getPros: () => state.loggedUser.pros
 }
 
 export default {

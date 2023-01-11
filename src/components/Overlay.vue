@@ -1,6 +1,6 @@
 <template>
-  <v-overlay :value="overlay">
-    <v-progress-circular indeterminate size="64"></v-progress-circular>
+  <v-overlay :value="overlay" style="z-index:9;">
+    <v-progress-circular indeterminate size="94"></v-progress-circular>
   </v-overlay>
 </template>
 

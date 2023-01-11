@@ -17,19 +17,18 @@
       :message="confirmDialogMessage"
     />
 
-    <overlay :overlay="overlay"></overlay>
   </div>
 </template>
 
 <script>
 
 import { db } from "../../firebase"
+import { mapActions } from "vuex"
 import Titulo from "@/components/Modelos/TituloModelo"
 import Busqueda from "@/components/Modelos/BusquedaModelo"
 import Resultados from "./Resultados.vue"
 import ConfirmDialog from '@/components/UI/Dialogs/ConfirmDialog.vue'
 import TableNames from '@/config/table-names'
-import Overlay from "@/components/Overlay"
 
 export default {
   name: "GestionConcursos",
@@ -37,8 +36,7 @@ export default {
     Titulo,
     ConfirmDialog,
     Busqueda,
-    Resultados,
-    Overlay
+    Resultados
   },
   data() {
     return {
@@ -48,7 +46,7 @@ export default {
                 { text: 'Apellidos', value: 'lastname', align: 'left', sortable: true },
                 { text: 'Especialidad', value: 'speciality', align: 'left', sortable: true },
                 { text: 'Ciudad', value: 'city', align: 'left', sortable: true },
-                { text: 'Valoración', value: 'valorations', align: 'left', sortable: true }
+                { text: 'Valoración', value: 'patients', align: 'left', sortable: true }
             ],
       
       confirmDialogTitle: "",
@@ -77,11 +75,12 @@ export default {
     }
   },
 
-  methods: {  
+  methods: { 
+    ...mapActions(["setOverlay"]), 
     async executeSearch(search){
+      this.setOverlay(true)
       this.filteredItems = []
       const results = await this.filterSearch(search)
-      console.log(results)
       for (let result of results) {
         for (let value in result) {
           if (typeof (result[value]) === 'string' && result[value].toLowerCase().includes(search.term.toLowerCase())) {
@@ -89,6 +88,7 @@ export default {
           }
         }
       }
+      this.setOverlay(false)
     },
     async filterSearch(search) {
       let results = []
@@ -102,7 +102,6 @@ export default {
         })
 
       }
-      console.log(results)
       return results
     }   
   }

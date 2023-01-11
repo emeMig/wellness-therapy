@@ -11,13 +11,13 @@ export const mutations = {
 }
 
 export const actions = {
-    setLoader({commit}, payload) {
+    setOverlay({commit}, payload) {
         commit(mutationTypes.SET_LOADER, payload)
     },
 }
 
 export const getters = {
-    getLoader: state => state.loaderDialog
+    getOverlay: state => state.loaderDialog
 }
 
 export default {

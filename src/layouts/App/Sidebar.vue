@@ -42,9 +42,9 @@
       id="app-sidebar"
     >
       <template v-for="(item, i) in itm">
-        <ListGroup v-bind="item" :key="i" v-if="item.items && isVisible(item.roles)" class="pr-0 pl-2"/>
+        <ListGroup v-bind="item" :key="i" v-if="item.items" class="pr-0 pl-2"/>
         <v-subheader
-          v-else-if="item.header && isVisible(item.roles)"
+          v-else-if="item.header"
           class="heading-text ml-2 nav-subheader"
           :key="`${i}-item`"
           :class="{ 'mt-3': i !== 0 }"
@@ -54,7 +54,7 @@
             <h3>{{ item.header }}</h3>
           </span>
         </v-subheader>
-        <NavigationItem v-else :key="`si-${i}`" v-bind="item" :show="isVisible(item.roles)" class="pr-0 pl-2"/>
+        <NavigationItem v-else :key="`si-${i}`" v-bind="item" class="pr-0 pl-2"/>
       </template>
       <v-spacer class="mb-5"></v-spacer>
     </v-list>
@@ -63,7 +63,6 @@
 
 <script>
 import { mapGetters } from "vuex";
-import appDrawerItems from "@/config/navigation-items";
 import ListGroup from "@/components/UI/NavigationItems/ListGroup";
 import NavigationItem from "@/components/UI/NavigationItems/NavigationItem";
 import has from "lodash/has";
@@ -75,7 +74,7 @@ export default {
   },
   data() {
     return {
-      items: appDrawerItems,
+      key: 'data'
     };
   },
   computed: {
@@ -87,7 +86,7 @@ export default {
       "isClippedOver",
     ]),
     ...mapGetters("scheme", ["semidark"]),
-    ...mapGetters(["getRoleId"]),
+    ...mapGetters(["getPatients"]),
     activemenu() {
       return this.$vuetify.theme.activemenu;
     },
@@ -99,19 +98,46 @@ export default {
         this.$store.dispatch("navigations/setSidenavVisibility", value);
       },
     },
+    patientsMenu() {
+      const patientsMenu = this.getPatients.map ( patient => {
+        return {
+          name: patient.id,
+          title: patient.name,
+          
+          prependIcon: 'mdi-account-supervisor-circle',
+          icon: 'mdi-account-check',
+          i18n: patient.name
+        }
+      })
+    return patientsMenu
+    },
+    items() {
+      const items =[
+        { icon: "mdi-view-dashboard", 
+          title: "PrivateArea", 
+          name: "PrivateArea", 
+          i18n: "Mi Área Privada" 
+        },
+        {
+          title: "Pacientes",
+          group: "pacientes",
+          icon: "mdi-account-supervisor-circle",
+          i18n: "Mis Pacientes",
+          items: this.patientsMenu,
+        },
+      ]
+      return items 
+    },
     itm() {
       return this.items.map(this.addLanguagePrefix);
     },
   },
   methods: {
-    isVisible(roles) {
-      return !!(roles.includes(2))
-    },
     addLanguagePrefix(item) {
       const { items, ...props } = item;
       const newVal = has(props, "header")
-        ? { header: this.$t(`Global.Main.${item.i18n}`) }
-        : { title: this.$t(`Global.Main.${item.i18n}`) };
+        ? { header: item.i18n }
+        : { title: item.i18n };
       const newItem = {
         ...props,
         ...newVal,
@@ -123,8 +149,11 @@ export default {
 
       return newItem;
     },
+  },
+  mounted(){
+    console.log(this.items)
   }
-};
+}
 </script>
 <style>
   #nav-title:after {

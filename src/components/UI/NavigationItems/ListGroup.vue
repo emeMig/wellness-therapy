@@ -35,7 +35,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import { camel } from "@/utils/helpers";
+// import { camel } from "@/utils/helpers";
 import ListSubGroup from "./ListSubGroup";
 import ItemIcon from "./ItemIcon";
 
@@ -83,7 +83,7 @@ export default {
           },
         };
       }
-      return { name: `${this.group}/${camel(subItem.name)}` };
+      return `/pacientes/${subItem.name}`
     },
   },
 };

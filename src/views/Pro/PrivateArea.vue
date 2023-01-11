@@ -44,7 +44,7 @@
 <script>
 
 import { db, FieldValue } from '@/firebase'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import {OPEN_SNACKBAR} from "@/store/actions/snackbar"
 import Titulo from "@/components/Modelos/TituloModelo";
 import ContentDialog from "@/components/UI/Dialogs/ContentDialog.vue"
@@ -77,7 +77,9 @@ export default {
       }
   },
   methods: {
-    getPublications() {   
+    ...mapActions(["setOverlay"]), 
+    getPublications() { 
+      this.setOverlay(true)  
       db.collection("usuariosProfesionales").doc(this.getUser.email).get()
       .then( ( doc ) => {
         this.publications = doc.data().publications
@@ -92,6 +94,7 @@ export default {
                   timeout: 4000
                 })
               })
+      .finally(()=> this.setOverlay(false))        
       
     },
     addContenido() {
