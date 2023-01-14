@@ -20,15 +20,18 @@
                 <v-row class="py-6">
                   <v-col cols="12" class="mx-2 my-0 py-0">
                     <v-text-field
-                        @keydown.enter="checkPatient"
+                        @change="checkPatient"
                         clearable
                         v-model="patientUser" 
-                        label="Añadir usuario"
+                        label="Comprobar usuario"
                     />
+                    <div class="mt-n3 mb-6" v-if="userExists">
+                      <span class="mr-2">El usuario existe</span>
+                      <v-icon dense color="success">mdi-check</v-icon>
+                    </div>
                     <v-text-field
                         v-if="userExists"
-                        @change="validate" 
-                        @keydown.enter="addPatient"
+                        @input="validate" 
                         clearable
                         v-model="patientName" 
                         label="Añadir nombre paciente"
@@ -43,7 +46,7 @@
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn color="blue darken-1" text @click="closeDialog">Cancelar</v-btn>
-            <!-- <v-btn color="blue darken-1" text @click="addPatient" :disabled="!validForm">Añadir</v-btn>  -->
+            <v-btn v-if="userExists" color="blue darken-1" text @click="addPatient" :disabled="!validForm">Añadir</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -116,66 +119,70 @@
             )
       },
       async addPatient(){
-        this.setOverlay(true)
-        db.collection("usuariosProfesionales").doc(this.getUser.email).get()
-        .then((doc) => {            
-            if (!doc.data().patients.map((p) => p.id).includes(this.patientUser)) {
-                const addPatient = db.collection("usuariosProfesionales").doc(this.getUser.email)                
-                addPatient.update({
-                    patients: FieldValue.arrayUnion({ 
-                        id: this.patientUser,
-                        name: this.patientName,
-                        valoration: null,
-                        patientData: []
+        const confirm = await this.$refs.confirmDialog.open()           
+          if(!confirm){
+              return    
+          } else {          
+            this.setOverlay(true)
+            db.collection("usuariosProfesionales").doc(this.getUser.email).get()
+            .then((doc) => {            
+                if (!doc.data().patients.map((p) => p.id).includes(this.patientUser)) {
+                    const addPatient = db.collection("usuariosProfesionales").doc(this.getUser.email)                
+                    addPatient.update({
+                        patients: FieldValue.arrayUnion({ 
+                            id: this.patientUser,
+                            name: this.patientName,
+                            valoration: null,
+                            patientData: null
+                        })
                     })
-                })
-                // TAMBIEN HAY QUE AÑADIR EL PRO A LA LISTA DEL PATIENT!!!
-                .then(() => {
-                  const addPro = db.collection("usuariosGenericos").doc(this.patientUser)
-                  addPro.update({
-                    pros: FieldValue.arrayUnion(this.getUser.email)
-                  })  
-                })
-                .then(() => {
-                    this.updatePatients({
-                      id: this.patientUser,
-                      name: this.patientName,
-                      valoration: null,
-                      patientData: []
+                    .then(() => {
+                      const addPro = db.collection("usuariosGenericos").doc(this.patientUser)
+                      addPro.update({
+                        pros: FieldValue.arrayUnion(this.getUser.email)
+                      })  
                     })
-                    this.closeDialog()
+                    .then(() => {
+                        this.updatePatients({
+                          id: this.patientUser,
+                          name: this.patientName,
+                          valoration: null,
+                          patientData: null
+                        })
+                        this.closeDialog()
+                        this.$store.dispatch(OPEN_SNACKBAR, {
+                        text: "Paciente creado correctamente",
+                        color: 'success',
+                        y: 'bottom',
+                        x: 'right',
+                        timeout: 4000
+                    })
+                  })
+                } else {
                     this.$store.dispatch(OPEN_SNACKBAR, {
-                    text: "Paciente creado correctamente",
-                    color: 'success',
-                    y: 'bottom',
-                    x: 'right',
-                    timeout: 4000
-                })
-              })
-            } else {
+                        text: 'El usuario ya existe como paciente',
+                        color: 'warning',
+                        y: 'bottom',
+                        x: 'right',
+                        icon: "mdi-alert-octagon-outline",
+                        timeout: 2000
+                        }) 
+                    this.closeDialog()    
+                }                
+            })     
+            .catch(error => {
                 this.$store.dispatch(OPEN_SNACKBAR, {
-                    text: 'El usuario ya existe como paciente',
-                    color: 'warning',
+                    text: error.message,
+                    color: 'error',
                     y: 'bottom',
                     x: 'right',
                     icon: "mdi-alert-octagon-outline",
-                    timeout: 2000
-                    }) 
-                this.closeDialog()    
-            }                
-        })     
-        .catch(error => {
-            this.$store.dispatch(OPEN_SNACKBAR, {
-                text: error.message,
-                color: 'error',
-                y: 'bottom',
-                x: 'right',
-                icon: "mdi-alert-octagon-outline",
-                timeout: 4000
+                    timeout: 4000
+                })
+                this.closeDialog()
             })
-            this.closeDialog()
-        })
-        .finally(()=> this.setOverlay(false))   
+            .finally(()=> this.setOverlay(false))  
+          } 
       },
       validate() {
           this.validForm = this.$refs.form.validate()

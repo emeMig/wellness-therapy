@@ -90,30 +90,34 @@ export default {
   methods: {
     ...mapActions(["setOverlay"]),
     getPublications() {  
-      this.setOverlay(true)
-      for(let pro of this.getUser.pros) {
-        db.collection("usuariosProfesionales").doc(pro).get()
-          .then( (doc) => {
-            if (doc.exists) {
-              const proPublications = doc.data().publications
-              proPublications.forEach((publication) => publication.authorId = doc.id)
-              proPublications.forEach((publication) => publication.authorName = doc.data().surname + ' ' + doc.data().lastname)
-              this.allPublications = [ ...this.allPublications, ...proPublications]
-            } else 
-              console.log('doc no existe');
-        })
-        .catch(error => {
-          this.$store.dispatch(OPEN_SNACKBAR, {
-            text: error.message,
-            color: 'error',
-            y: 'bottom',
-            x: 'right',
-            icon: "mdi-alert-octagon-outline",
-            timeout: 4000
+      
+      if (this.getUser.pros.length > 0) {
+        this.setOverlay(true)
+        for(let pro of this.getUser.pros) {
+          db.collection("usuariosProfesionales").doc(pro).get()
+            .then( (doc) => {
+              if (doc.exists) {
+                const proPublications = doc.data().publications
+                proPublications.forEach((publication) => publication.authorId = doc.id)
+                proPublications.forEach((publication) => publication.authorName = doc.data().surname + ' ' + doc.data().lastname)
+                this.allPublications = [ ...this.allPublications, ...proPublications]
+              } else 
+                console.log('doc no existe');
           })
-        })
-        .finally(()=> this.setOverlay(false))
-      }            
+          .catch(error => {
+            this.$store.dispatch(OPEN_SNACKBAR, {
+              text: error.message,
+              color: 'error',
+              y: 'bottom',
+              x: 'right',
+              icon: "mdi-alert-octagon-outline",
+              timeout: 4000
+            })
+          })
+          .finally(()=> this.setOverlay(false))
+        } 
+      }
+           
     },
     openValoration(pro) {
       this.proId = pro.id

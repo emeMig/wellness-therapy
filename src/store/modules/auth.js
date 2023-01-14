@@ -20,6 +20,9 @@ const mutations= {
   ADD_PATIENT(state, payload) {
     state.loggedUser.patients.push(payload)
   },
+  DELETE_PATIENT(state, payload) {
+    state.loggedUser.patients = state.loggedUser.patients.filter(p => p.id !== payload)
+  },
   LOAD_STORAGE(state, payload) {
     state.loggedUser = payload
   }
@@ -229,6 +232,9 @@ const actions= {
   updatePatients({ commit }, paciente) {
     commit('ADD_PATIENT', paciente)
   },
+  deletePat({ commit }, pacienteId) {
+    commit('DELETE_PATIENT', pacienteId)
+  }
 }
 
 const getters= {

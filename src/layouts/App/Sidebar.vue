@@ -149,9 +149,6 @@ export default {
 
       return newItem;
     },
-  },
-  mounted(){
-    console.log(this.items)
   }
 }
 </script>

@@ -74,7 +74,7 @@
                                 autocomplete="off"
                                 prepend-inner-icon="mdi-account"
                                 v-model="form.username"
-                                @input="validate"
+                                @blur="validate"
                                 :rules="[rules.requiredUser]"
                                 label="Correo electrónico"
                                 solo
@@ -91,7 +91,7 @@
                                         v-model="form.password1"
                                         :rules="[rules.requiredPass]"
                                         label="Contraseña"
-                                        @input="validate"
+                                        @blur="validate"
                                         @click:append="showPwd1 = !showPwd1"
                                         solo
                                         flat
@@ -107,7 +107,7 @@
                                         v-model="form.password2"
                                         :rules="[rules.requiredPass, rules.minLength6, value => value === form.password1 || 'las contraseñas no coinciden',]"
                                         label="Repite contraseña"
-                                        @input="validate"
+                                        @blur="validate"
                                         @click:append="showPwd2 = !showPwd2"
                                         solo
                                         flat
@@ -122,7 +122,7 @@
                                         autocomplete="off"
                                         prepend-inner-icon="mdi-card-account-details"
                                         v-model="form.surname"
-                                        @input="validate"
+                                        @blur="validate"
                                         :rules="[rules.requiredUser]"
                                         label="Nombre"
                                         solo
@@ -136,7 +136,7 @@
                                         autocomplete="off"
                                         prepend-inner-icon="mdi-card-account-details"
                                         v-model="form.lastname"
-                                        @input="validate"
+                                        @blur="validate"
                                         :rules="[rules.requiredUser]"
                                         label="Apellidos"
                                         solo
@@ -152,7 +152,7 @@
                                         :items = "specialities"
                                         prepend-inner-icon="mdi-doctor"
                                         v-model="form.speciality"
-                                        @input="validate"
+                                        @blur="validate"
                                         :rules="[rules.requiredUser]"
                                         label="Especialidad"
                                         solo
@@ -166,7 +166,7 @@
                                         autocomplete="off"
                                         prepend-inner-icon="mdi-city"
                                         v-model="form.city"
-                                        @input="validate"
+                                        @blur="validate"
                                         :rules="[rules.requiredUser]"
                                         label="Ciudad"
                                         solo
@@ -177,8 +177,9 @@
                                 <v-col class="ma-0 pa-2 pr-1" cols="12">
                                     <v-textarea
                                         v-if="category === 2"
+                                        autocomplete="off"
                                         v-model="form.description"
-                                        @input="validate"
+                                        @blur="validate"
                                         background-color="#FFFFFF"
                                         dense
                                         clearable
@@ -195,7 +196,6 @@
                                       <v-text-field
                                           v-if="category === 2"
                                           v-model="selectedPlan"
-                                          @input="validate"
                                           label="PLAN SELECCIONADO: "
                                           outlined
                                           readonly

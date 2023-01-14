@@ -6,6 +6,7 @@ import vuetify from '@/plugins/vuetify'
 import './sass/main.scss'
 import { createI18n } from '@/i18n'
 
+
 const i18n = createI18n(store.state.translation.locale).i18n
 
 Vue.config.productionTip = false

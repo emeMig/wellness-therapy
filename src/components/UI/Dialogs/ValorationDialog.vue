@@ -98,7 +98,12 @@ export default {
         closeDialog() {
           this.$emit('close-dialog')
         },
-        emitValoration(){
+        async emitValoration(){
+          const confirm = await this.$refs.confirmDialog.open()           
+          if(!confirm){
+              return    
+          }
+          else {
             const setNewValoration = db.collection("usuariosProfesionales").doc(this.pro)
             setNewValoration.get()
               .then((doc) => {
@@ -132,10 +137,9 @@ export default {
                     timeout: 4000
                   })
                 })
-              .finally(()=> this.closeDialog())
-
-
-              })
+              .finally(()=> this.closeDialog())              
+            })
+          }  
         }
     },
     mounted() {
