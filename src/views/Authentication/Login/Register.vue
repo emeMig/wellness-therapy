@@ -233,7 +233,7 @@
   
   
   const defaultForm = {
-    username: "",
+    username: "test",
     password: "",
     category: "",
     surname: "",
@@ -278,13 +278,14 @@
         this.validForm = this.$refs.loginForm.validate()
       },
       createHandler() {
-        console.log(this.form);
+        console.log('form is ', this.form)
         this.createUser({
           email: this.form.username, 
           password: this.form.password1, 
           category: this.category,
           surname: this.form.surname,
           lastname: this.form.lastname,
+          description: this.form.description,
           speciality: this.form.speciality,
           city: this.form.city,
           plan: this.selectedPlan

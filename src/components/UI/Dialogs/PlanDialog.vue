@@ -130,7 +130,6 @@
     },
     methods: {
         selectOption(plan) {
-            console.log('pasa');
             this.plan = plan
         },
         closeDialog() {

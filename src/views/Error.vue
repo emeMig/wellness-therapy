@@ -49,7 +49,7 @@ export default {
     }
 
     .notfound-404 h1 {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -81,7 +81,7 @@ export default {
     }
 
     h2 {
-      font-family: 'Cabin', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 20px;
       font-weight: 400;
       text-transform: uppercase;

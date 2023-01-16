@@ -1,4 +1,4 @@
-# frontend
+# frontend Wellness Therapy
 
 ## Project setup
 ```

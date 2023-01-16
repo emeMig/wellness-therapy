@@ -81,6 +81,7 @@ const actions= {
 
         // creamos la coleccion asociada al usuario profesional
         if ( usuario.category === 2) {
+          console.log(usuario)
           db.collection("usuariosProfesionales").doc(res.user.email).set({
             category: usuario.category,
             surname: usuario.surname,
