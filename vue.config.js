@@ -3,25 +3,13 @@ const productionGzipExtensions = ["js", "css"]
 
 // vue.config.js
 module.exports = {
-  // proxy all webpack dev-server requests starting with /api
-  // to our Spring Boot backend (localhost:8080) using http-proxy-middleware
-  // see https://cli.vuejs.org/config/#devserver-proxy
-
-  // devServer: {
-  //   public: 'localhost',
-  //   host: '0.0.0.0',
-  //   port: 8081,
-  //   disableHostCheck: true,
-  //   proxy: {
-  //     '/*': {
-  //       target: 'http://localhost:8080',
-  //       //target: 'http://10.32.4.4:8080',
-  //       changeOrigin: true,
-  //       ws: true
-  //     }
-  //   }
-  // },
-
+  pwa: {
+    name: "Wellness_Therapy",
+    themeColor: "#00ACBF",
+    display: "standalone",
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
+  },
   transpileDependencies: ["vuetify","vuex-persist"],
   configureWebpack: {
     plugins: [

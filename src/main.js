@@ -5,6 +5,7 @@ import store from '@/store'
 import vuetify from '@/plugins/vuetify'
 import './sass/main.scss'
 import { createI18n } from '@/i18n'
+import './registerServiceWorker'
 
 
 const i18n = createI18n(store.state.translation.locale).i18n

@@ -18,6 +18,14 @@ export default [
   },
   {
     params: {
+      path: "/forgot-password",
+      name: "ForgotPass",
+      meta: { layout: "full" },
+    },
+    defaultComponentPath: "Authentication/Login/ForgotPass",
+  },
+  {
+    params: {
       path: "/buscador",
       name: "Buscador",
       meta: { requiresAuth: true },
