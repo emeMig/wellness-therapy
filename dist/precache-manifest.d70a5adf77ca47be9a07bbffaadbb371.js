@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7dfd33dbc1c7f9480bb1e29acc25dac1",
+    "revision": "744751e2ef484b9976d26643d4cd756d",
     "url": "/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/robots.txt"
   },
   {
-    "revision": "e4f82a51c8d2a0c3b254",
+    "revision": "359efe3e98a96a5740d3",
     "url": "/static/css/Authentication-Login-Register-vue.ed6395a7.css"
   },
   {
@@ -60,11 +60,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/Pro-Session-vue.6d78a58c.css"
   },
   {
-    "revision": "f2402b96ed48aebfa644",
+    "revision": "5799dd8ac56dd2bb6507",
     "url": "/static/css/app.a600a79b.css"
   },
   {
-    "revision": "7b8465ce2b3b2b1cb154",
+    "revision": "c00322ac17644357a39f",
     "url": "/static/css/chunk-14cc263a.589c4a5e.css"
   },
   {
@@ -148,8 +148,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/Authentication-Login-Login-vue.ef4d6bef.js"
   },
   {
-    "revision": "e4f82a51c8d2a0c3b254",
-    "url": "/static/js/Authentication-Login-Register-vue.cca2f285.js"
+    "revision": "359efe3e98a96a5740d3",
+    "url": "/static/js/Authentication-Login-Register-vue.d91f24a2.js"
   },
   {
     "revision": "b0ddd65f1fc10af8e1c7",
@@ -196,12 +196,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/Pro-Session-vue.0a19197e.js"
   },
   {
-    "revision": "f2402b96ed48aebfa644",
-    "url": "/static/js/app.069bdd2e.js"
+    "revision": "5799dd8ac56dd2bb6507",
+    "url": "/static/js/app.9a9611ff.js"
   },
   {
-    "revision": "7b8465ce2b3b2b1cb154",
-    "url": "/static/js/chunk-14cc263a.d43e96c4.js"
+    "revision": "c00322ac17644357a39f",
+    "url": "/static/js/chunk-14cc263a.7d2b27e6.js"
   },
   {
     "revision": "f8d4a7da918614de3b9a",
