@@ -99,17 +99,20 @@ export default {
       },
     },
     patientsMenu() {
-      const patientsMenu = this.getPatients.map ( patient => {
-        return {
-          name: patient.id,
-          title: patient.name,
-          
-          prependIcon: 'mdi-account-supervisor-circle',
-          icon: 'mdi-account-check',
-          i18n: patient.name
-        }
-      })
-    return patientsMenu
+      if (this.getPatients.length > 0) {
+        const patientsMenu = this.getPatients.map ( patient => {
+          return {
+            name: patient.id,
+            title: patient.name,
+            
+            prependIcon: 'mdi-account-supervisor-circle',
+            icon: 'mdi-account-check',
+            i18n: patient.name
+          }
+        })
+      return patientsMenu
+
+      } else return []
     },
     items() {
       const items =[
@@ -157,3 +160,4 @@ export default {
     display:none !important;
   }
 </style>
+

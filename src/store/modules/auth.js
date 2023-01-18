@@ -97,6 +97,17 @@ const actions= {
           })
           .then(() => {
             createdUser.category = usuario.category
+            createdUser.surname= usuario.surname,
+            createdUser.lastname= usuario.lastname,
+            createdUser.speciality= usuario.speciality,
+            createdUser.city= usuario.city,
+            createdUser.plan= usuario.plan,
+            createdUser.description= usuario.description,
+            createdUser.valorations= [],
+            createdUser.patients= [],
+            createdUser.messages= [],
+            createdUser.publications= []
+            console.log(createdUser)
             commit('SET_USUARIO', createdUser)            
             router.push('/private')
             dispatch(OPEN_SNACKBAR, {
@@ -251,3 +262,4 @@ export default {
   actions,
   getters
 }
+

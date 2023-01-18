@@ -37,7 +37,7 @@
                         <button @click="selectOption('Mensual Plus')">
                             <v-card 
                             class="pa-3"
-                                :color="plan === 'Mensual Plus' ? 'gray' : 'secondary'"
+                                :color="plan === 'Mensual Plus' ? 'gray' : 'warning'"
                                 dark
                             >
                                 <v-card-title>
